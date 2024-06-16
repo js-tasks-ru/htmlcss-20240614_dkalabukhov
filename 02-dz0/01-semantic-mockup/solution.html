@@ -1,4 +1,148 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <!-- Ваше решение -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семантическая разметка страницы</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+        }
+
+        .header-main {
+            display: flex;
+            /* flex-wrap: wrap; */
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            background-color: rgb(215, 212, 212);
+            height: 25vh
+        }
+
+        .header-main__heading {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            align-self: center;
+        }
+
+        .nav-main {
+            display: flex;
+            justify-content: center;
+            background-color: gray;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-main__navigaion {
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-main__item {
+            display: inline-flex;
+        }
+
+        .nav-main__item + .nav-main__item {
+            margin-left: 1.5em;
+        }
+
+        .nav-main__link {
+            text-decoration: none;
+            display: flex;
+            padding: 1.1em 1.5em;
+            font-size: 1.3em;
+            color: white
+        }
+
+        .nav-main__link:hover {
+            background-color: rgb(85, 84, 84);
+        }
+
+        .mainly {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgb(102, 94, 94);
+            padding: 20px;
+            height: 60vh
+        }
+
+        .article-main {
+            background-color: rgb(128, 164, 156);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-main__heading {
+            margin-left: 1.5em
+        }
+
+        .article-main__list {
+            font-size: 1.3em;
+            line-height: 1.8;
+        }
+
+        .article-main + .article-main {
+            margin-top: 10px;
+        }
+
+        .footer-main {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: rgb(30, 29, 29);
+            height: 15vh;
+        }
+
+        .footer-main__heading {
+            font-size: 2em;
+            font-weight: 400;
+            color: #fff;
+            padding: 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-main">
+        <h1 class="header-main__heading">Header</h1>
+        <nav class="nav-main">
+            <ul class="nav-main__navigaion">
+                <li class="nav-main__item"><a class="nav-main__link" href="#">Navigation 1</a></li>
+                <li class="nav-main__item"><a class="nav-main__link" href="#">Navigation 2</a></li>
+                <li class="nav-main__item"><a class="nav-main__link" href="#">Navigation 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainly">
+        <article class="article-main">
+            <h2 class="article-main__heading">Article 1</h2>
+            <ul class="article-main__list">
+                <li>Оригинальная трилогия</li>
+                <li>Трилогия приквелов</li>
+                <li>Трилогия сиквелов</li>
+            </ul>
+        </article>
+        <article class="article-main">
+            <h2 class="article-main__heading">Article 2</h2>
+            <ol class="article-main__list">
+                <li>Эпизод IV — Новая надежда</li>
+                <li>Эпизод V — Империя наносит ответный удар</li>
+                <li>Эпизод VI — Возвращение джедая</li>
+            </ol>
+        </article>
+    </main>
+    <footer class="footer-main">
+        <h2 class="footer-main__heading">Footer</h2>
+    </footer>
+</body>
 </html>
