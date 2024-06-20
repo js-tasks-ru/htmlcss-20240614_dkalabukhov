@@ -1,0 +1,24 @@
+.footer {
+  height: 384px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__heading {
+  padding-top: 71px;
+  font-family: inherit;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.footer__content {
+  font-family: inherit;
+  padding-top: 32px;
+  width: 640px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}

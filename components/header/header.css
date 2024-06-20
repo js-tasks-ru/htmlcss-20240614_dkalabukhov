@@ -1,0 +1,13 @@
+.header {
+  height: 237px;
+  font-family: 'Inter', sans-serif;
+}
+
+.header__heading {
+  font-family: inherit;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 64px;
+  padding-top: 96px;
+  padding-left: 160px;
+}
