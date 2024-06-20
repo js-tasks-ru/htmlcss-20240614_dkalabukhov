@@ -1,1 +1,67 @@
 /* Стилизация кнопки */
+:root {
+  /* primry из main.css имеет другой цвет, чем в макете */
+  --primary-color: #4263EB;
+  --primary-color-hover: #2342C0;
+  --secondary-hover: #5028C6;
+}
+
+.btn {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  width: 189px;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+.btn_primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn_primary:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.btn_primary:disabled {
+  opacity: 50%;
+}
+
+.btn_secondary {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+.btn_secondary:hover {
+  background-color: var(--secondary-hover);
+}
+
+.btn_secondary:disabled {
+  opacity: 50%;
+}
+
+.btn_alternate {
+  border: 1px solid var(--grey-3);
+  color: var(--grey-4);
+}
+
+.btn_alternate:hover {
+  border: 1px solid var(--grey-4);
+}
+
+.btn_alternate:disabled {
+  opacity: 30%;
+}
