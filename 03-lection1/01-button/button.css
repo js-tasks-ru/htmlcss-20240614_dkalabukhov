@@ -1,6 +1,5 @@
 /* Стилизация кнопки */
 .btn {
-  --primary: #4263EB;
   --primary-hover: #2342C0;
   --secondary-hover: #5028C6;
   box-sizing: border-box;
