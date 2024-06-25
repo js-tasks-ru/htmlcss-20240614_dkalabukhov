@@ -40,6 +40,10 @@
   font-family: "Inter", sans-serif;
 }
 
+.accordion__item[open] {
+  padding-bottom: 32px;
+}
+
 .accordion__item[open] .accordion__arrow {
   transform: rotate(180deg);
 }
