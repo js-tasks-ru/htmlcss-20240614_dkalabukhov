@@ -1,0 +1,16 @@
+.header {
+  height: 237px;
+  padding: 96px 0 77px;
+}
+
+.header__container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.header__heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 64px;
+}

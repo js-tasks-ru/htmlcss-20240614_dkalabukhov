@@ -1,0 +1,4 @@
+.mainly {
+  background-color: var(--main-background);
+  flex-grow: 1;
+}

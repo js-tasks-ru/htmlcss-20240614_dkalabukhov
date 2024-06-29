@@ -1,4 +1,9 @@
 @import '../fonts/fonts.css';
+@import './destyle.css';
+@import '../../components/page/page.css';
+@import '../../components/header/header.css';
+@import '../../components/mainly/mainly.css';
+@import '../../components/footer/footer.css';
 
 :root {
     --white: #ffffff;
@@ -17,6 +22,9 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --container-width: 1110px;
+    --main-background: #F9FAFC;
 }
 
 * {
