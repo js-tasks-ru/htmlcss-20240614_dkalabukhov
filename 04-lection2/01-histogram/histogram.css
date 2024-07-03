@@ -1,5 +1,4 @@
 .histogram {
-  --blue: #4263EB;
   display: flex;
   flex-direction: column;
   padding: 16px 24px 24px;
