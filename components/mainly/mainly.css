@@ -2,3 +2,35 @@
   background-color: var(--main-background);
   flex-grow: 1;
 }
+
+.mainly__container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.mainly__cards {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  margin-top: 68px;
+  margin-bottom: 204px;
+}
+
+.mainly__card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 367px;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 80px 24px 30px 26px;
+}
+
+.mainly__card-title {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 24.61px;
+  margin-top: auto;
+  align-self: center;
+}
