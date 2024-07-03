@@ -7,7 +7,7 @@
 }
 
 .histogram_preview {
-  height: 157px;
+  height: var(--mainly-card-component-height);
 }
 
 .histogram__header {
