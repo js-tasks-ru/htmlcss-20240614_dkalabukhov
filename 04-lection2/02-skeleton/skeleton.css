@@ -17,7 +17,7 @@
   height: 64px;
   background-color: var(--grey-2);
   border-radius: 50%;
-  padding-right: 3px;;
+  flex-shrink: 0;
 }
 
 .skeleton__container-columns {
@@ -25,7 +25,6 @@
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
 }
 
 .skeleton__strip {
@@ -43,7 +42,7 @@
   width: 49%;
 }
 
-.skeleton > .skeleton__strip + .skeleton__strip {
+.skeleton__strip + .skeleton__strip {
   margin-top: 8px;
 }
 
