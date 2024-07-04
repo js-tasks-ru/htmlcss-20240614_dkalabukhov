@@ -4,9 +4,32 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="./btn-modal-open.css">
+        <link rel="stylesheet" href="./btn-close.css">
+        <link rel="stylesheet" href="./container.css">
         <title>Modal</title>
     </head>
     <body>
+        <div class="container">
+            <button class="btn-modal-open" id="modal-open">Open modal</button>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal__body">
+                <div class="modal__btn-container">
+                    <button id="modal-close" class="btn-close">
+                        <img class="btn-close__img" src="./left-cross.svg" alt="" srcset="">
+                        <img class="btn-close__img" src="./right-cross.svg" alt="" srcset="">
+                    </button>
+                </div>
+                <header class="modal__header">
+                    <h5 class="modal__title">Modal title</h5>
+                </header>
+                <p class="modal__content">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </div>
+        </div>
     </body>
-    <script src="./index.js"></script> 
+    <script src="./index.js" defer></script>
 </html>

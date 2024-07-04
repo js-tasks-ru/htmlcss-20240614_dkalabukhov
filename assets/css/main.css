@@ -21,10 +21,14 @@
     --success: var(--blue);
 
     --primary: var(--blue);
+    --primary-hover: #2342C0;
     --secondary: var(--purple);
 
     --container-width: 1110px;
     --main-background: #F9FAFC;
+
+    --modal-background: #C4C4C4;
+    --modal-title-color: #334D6E;
 }
 
 * {

@@ -8,7 +8,7 @@
     }
 
     modalOpen.addEventListener('click', () => {
-        modal.style.display = 'block';
+        modal.style.display = 'flex';
         document.body.overflow = 'hidden';
     });
 
