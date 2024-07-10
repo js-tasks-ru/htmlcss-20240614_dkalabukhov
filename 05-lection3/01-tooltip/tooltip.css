@@ -1,15 +1,11 @@
 .tooltip {
   position: relative;
-  text-align: center;
-}
-
-.tooltip__trigger {
   display: inline-block;
-  margin: auto 0;
 }
 
 .tooltip__bubble {
   display: none;
+  white-space: nowrap;
   background-color: var(--primary);
   font-family: Inter, sans-serif;
   font-size: 16px;
