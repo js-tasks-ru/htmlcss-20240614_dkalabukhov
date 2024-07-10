@@ -8,6 +8,7 @@
 
 .histogram_preview {
   height: var(--mainly-card-component-height);
+  width: 100%;
 }
 
 .histogram__header {

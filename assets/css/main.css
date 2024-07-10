@@ -5,6 +5,7 @@
 @import '../../components/mainly/mainly.css';
 @import '../../components/footer/footer.css';
 @import '../../components/histogram/histogram.css';
+@import '../../components/card/card.css';
 
 :root {
     --white: #ffffff;
@@ -29,6 +30,6 @@
     --mainly-card-component-height: 157px;
 }
 
-* {
+body {
     font-family: 'Roboto', sans-serif;
 }
