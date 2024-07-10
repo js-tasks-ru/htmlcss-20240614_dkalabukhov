@@ -14,7 +14,6 @@
 .modal__body {
   background-color: var(--white);
   padding: 30px 40px 33px;
-  margin: 0 auto;
   max-width: 428px;
   border-radius: 8px;
   position: relative;
@@ -38,8 +37,18 @@
   line-height: 24px;
 }
 
-.modal__btn-container {
-  margin-top: -16px;
+.modal__btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal__btn-img {
+  position: absolute;
 }
 
 .modal__content {
