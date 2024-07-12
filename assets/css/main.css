@@ -25,6 +25,10 @@
 
     --container-width: 1110px;
     --main-background: #F9FAFC;
+
+    --calendar-primary: #334D6E;
+    --calendar-week-days: #90A0B7;
+    --calendar-item-range-mid: rgba(160, 177, 245, 0.2);
 }
 
 * {
