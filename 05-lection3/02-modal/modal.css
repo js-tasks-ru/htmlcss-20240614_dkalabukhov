@@ -19,12 +19,6 @@
   position: relative;
 }
 
-.modal__btn-container {
-  position: absolute;
-  right: 20px;
-  top: 35px;
-}
-
 .modal__header {
   margin-bottom: 14px;
 }
@@ -39,16 +33,12 @@
 
 .modal__btn-close {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 10px;
+  top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.modal__btn-img {
-  position: absolute;
 }
 
 .modal__content {

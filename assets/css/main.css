@@ -4,6 +4,7 @@
 @import '../../components/header/header.css';
 @import '../../components/mainly/mainly.css';
 @import '../../components/footer/footer.css';
+@import '../../03-lection1/01-button/button.css';
 
 :root {
     --white: #ffffff;
@@ -31,6 +32,6 @@
     --modal-title-color: #334D6E;
 }
 
-* {
+body {
     font-family: 'Roboto', sans-serif;
 }
