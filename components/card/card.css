@@ -9,7 +9,6 @@
 }
 
 .card__component-container {
-  display: flex;
   flex-grow: 1;
 }
 
@@ -18,5 +17,5 @@
   font-weight: 500;
   font-size: 21px;
   line-height: 24.61px;
-  text-align: center
+  text-align: center;
 }
