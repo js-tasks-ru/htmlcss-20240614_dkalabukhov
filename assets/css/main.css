@@ -30,6 +30,11 @@
 
     --modal-background: #C4C4C4;
     --modal-title-color: #334D6E;
+ 
+    --calendar-primary: #334D6E;
+    --calendar-week-days: #90A0B7;
+    --calendar-item-range-mid: rgba(160, 177, 245, 0.2);
+
 }
 
 body {
