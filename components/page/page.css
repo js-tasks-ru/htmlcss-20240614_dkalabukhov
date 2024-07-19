@@ -1,7 +1,6 @@
 .page {
   font-size: 14px;
   color: var(--black);
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }

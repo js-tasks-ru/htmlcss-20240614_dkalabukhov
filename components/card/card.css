@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 367px;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 80px 24px 30px 26px;
+}
+
+.card__component-container {
+  flex-grow: 1;
+}
+
+.card__title {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 24.61px;
+  text-align: center;
+}

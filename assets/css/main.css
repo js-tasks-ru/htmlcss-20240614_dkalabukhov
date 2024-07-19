@@ -4,6 +4,8 @@
 @import '../../components/header/header.css';
 @import '../../components/mainly/mainly.css';
 @import '../../components/footer/footer.css';
+@import '../../components/histogram/histogram.css';
+@import '../../components/card/card.css';
 @import '../../03-lection1/01-button/button.css';
 
 :root {
