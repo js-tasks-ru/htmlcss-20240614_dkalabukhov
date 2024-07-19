@@ -20,7 +20,7 @@
   margin: 0;
 }
 
-.histogram__total-orders_preview {
+.histogram_preview .histogram__total-orders {
   font-size: 12px;
   color: var(--grey-4);
 }
@@ -34,7 +34,7 @@
   color: var(--blue);
 }
 
-.histogram__link_preview {
+.histogram_preview .histogram__link {
   font-size: 12px;
 }
 
@@ -50,7 +50,7 @@
   line-height: 26px;
 }
 
-.histogram__orders-count_preview {
+.histogram_preview .histogram__orders-count {
   margin-bottom: 20px;
   font-size: 16px;
   margin-bottom: 15px;
@@ -67,7 +67,7 @@
   gap: 1px;
 }
 
-.histogram__bars_preview {
+.histogram_preview .histogram__bars {
   height: 44px;
 }
 
