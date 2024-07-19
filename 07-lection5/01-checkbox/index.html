@@ -4,8 +4,33 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
+        <link rel="stylesheet" href="./container.css">
     </head>
     <body>
-
+        <div class="container">
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__input">
+                <div class="checkbox__state">
+                    <div class="checkbox__control">
+                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="checkbox__title">Default</div>
+                </div>
+            </label>
+            <label class="checkbox checkbox_disabled">
+                <input type="checkbox" class="checkbox__input" disabled>
+                <div class="checkbox__state">
+                    <div class="checkbox__control">
+                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="checkbox__title">Disabled</div>
+                </div>
+            </label>
+        </div>
+        <script src="./checkbox.js"></script>
     </body>
 </html>
