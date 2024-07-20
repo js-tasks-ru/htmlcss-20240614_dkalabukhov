@@ -7,6 +7,9 @@ const render = () => {
     } else {
       radio.parentElement.querySelector('.radio__title').textContent = 'Default';
     }
+    if (radio.disabled) {
+      radio.parentElement.querySelector('.radio__title').textContent = 'Disabled';
+    }
   })
 }
 
