@@ -1,11 +1,6 @@
 .checkbox {
   display: inline-block;
   position: relative;
-  cursor: pointer
-}
-
-.checkbox_disabled {
-  pointer-events: none;
 }
 
 .checkbox__input {

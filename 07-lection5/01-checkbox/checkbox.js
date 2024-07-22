@@ -1,9 +1,20 @@
-const checkbox = document.querySelector('.checkbox__input');
-const checkboxTitle = document.querySelector('.checkbox__title');
+const checkboxes = document.querySelectorAll('.checkbox__input');
 
-checkbox.addEventListener('change', () => {
-  if (checkbox.checked) {
-    checkboxTitle.textContent = 'Checked';
-  }
-  else checkboxTitle.textContent = 'Default';
+const render = () => {
+  checkboxes.forEach((checkbox) => {
+    if (checkbox.checked) {
+      checkbox.parentElement.querySelector('.checkbox__title').textContent = 'Checked';
+    } else {
+      checkbox.parentElement.querySelector('.checkbox__title').textContent = 'Default';
+    }
+    if (checkbox.disabled) {
+      checkbox.parentElement.querySelector('.checkbox__title').textContent = 'Disabled';
+    }
+  })
+}
+
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener('change', () => {
+    render();
+  })
 })
