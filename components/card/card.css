@@ -1,18 +1,17 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 350px;
-  height: 367px;
   background: var(--white);
   border-radius: 12px;
   padding: 80px 24px 30px 26px;
 }
 
-.card__component-container {
+.card__body {
   flex-grow: 1;
+  margin-bottom: 1.5rem;
 }
 
-.card__title {
+.card__footer {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 21px;

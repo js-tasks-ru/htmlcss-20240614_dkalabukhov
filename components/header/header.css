@@ -1,6 +1,6 @@
 .header {
   height: 237px;
-  padding: 96px 0 77px;
+  padding: 25px 0 77px;
 }
 
 .header__container {
@@ -8,9 +8,31 @@
   margin: 0 auto;
 }
 
+.header__headline {
+  display: flex;
+}
+
 .header__heading {
   font-family: 'Inter', sans-serif;
   font-size: 50px;
   font-weight: 500;
   line-height: 64px;
+  margin-top: 41px;
+}
+
+@media (max-width: 1280px) {
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__headline {
+    justify-content: center;
+  }
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
