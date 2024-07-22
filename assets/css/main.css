@@ -6,6 +6,8 @@
 @import '../../components/footer/footer.css';
 @import '../../components/histogram/histogram.css';
 @import '../../components/card/card.css';
+@import '../../components/component/component.css';
+@import '../../components/menu/menu.css';
 @import '../../03-lection1/01-button/button.css';
 
 :root {
@@ -22,6 +24,7 @@
 
     --error: var(--red);
     --success: var(--blue);
+    --notification: #D84910;
 
     --primary: var(--blue);
     --primary-hover: #2342C0;
@@ -32,11 +35,12 @@
 
     --modal-background: #C4C4C4;
     --modal-title-color: #334D6E;
- 
+
     --calendar-primary: #334D6E;
     --calendar-week-days: #90A0B7;
     --calendar-item-range-mid: rgba(160, 177, 245, 0.2);
 
+    --menu-heading: #000;
 }
 
 body {

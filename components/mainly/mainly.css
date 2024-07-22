@@ -9,6 +9,15 @@
   padding: 68px 0 204px;
 }
 
+.mainly_inner .mainly__container {
+  display: grid;
+  grid-template-columns: 229px 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0 56px;
+  padding: 36px 0 0;
+  height: 100%;
+}
+
 .mainly__cards {
   display: flex;
   flex-flow: row wrap;
