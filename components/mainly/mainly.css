@@ -27,6 +27,7 @@
 @media (max-width: 768px) {
   .mainly__cards {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(367px, auto));
     grid-gap: 16px;
     padding: 0 16px;
   }
