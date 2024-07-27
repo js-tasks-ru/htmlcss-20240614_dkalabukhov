@@ -1,0 +1,27 @@
+.menu__heading {
+  font-family: 'Inter';
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.menu__list {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #212429;
+}
+
+.menu__item + .menu__item {
+  margin-top: 4px;
+}
+
+.menu__list .menu__item:last-child {
+  margin-top: 30px;
+}
+
+.menu__link_current {
+  color: var(--notification);
+}
+
