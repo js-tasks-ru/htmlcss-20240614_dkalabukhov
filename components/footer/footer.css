@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: var(--container-padding);
 }
 
 .footer__heading {
@@ -24,11 +25,4 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  .footer {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
 }

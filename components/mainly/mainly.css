@@ -12,25 +12,20 @@
 .mainly__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* При использовании auto-fill высота колонок во 2 ряду 315px почему-то */
-  grid-template-rows: repeat(2, minmax(367px, auto));
+  grid-template-rows: repeat(auto-fill, minmax(367px, auto));
+  grid-auto-rows: minmax(367px, auto);
   grid-gap: 30px;
-}
-
-@media (max-width: 1280px) {
-  .mainly__cards {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+  padding: var(--container-padding);
 }
 
 @media (max-width: 768px) {
   .mainly__cards {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, minmax(367px, auto));
+    grid-template-rows: repeat(auto-fill, minmax(315px, auto));
+    grid-auto-rows: minmax(315px, auto);
     grid-gap: 16px;
-    padding: 0 16px;
   }
+
   .mainly__container {
     padding: 24px 0 102px;
   }

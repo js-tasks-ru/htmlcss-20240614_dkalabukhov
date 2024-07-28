@@ -28,6 +28,8 @@
     --secondary: var(--purple);
 
     --container-width: 1110px;
+    --container-padding: 0;
+
     --main-background: #F9FAFC;
 
     --modal-background: #C4C4C4;
@@ -41,4 +43,16 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 1280px) {
+    :root {
+        --container-padding: 0 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --container-padding: 0 16px;
+    }
 }
