@@ -52,19 +52,6 @@
   transform: translate(-50%, -50%);
 }
 
-.burger-menu__dark-mode {
-  padding: 25px 0 24px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--grey-2);
-}
-
-.burger-menu__dark-mode-title {
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--grey-4);
-}
-
 .burger-menu__navigation {
   margin-top: 24px;
 }
