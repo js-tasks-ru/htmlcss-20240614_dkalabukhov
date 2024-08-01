@@ -7,14 +7,17 @@
   outline: none;
   background: transparent;
   cursor: pointer;
-  padding: 15px 20px 14px;
+  display: flex;
+  justify-content: center;
+  padding: .875rem 1rem;
   height: 48px;
-  font-family: 'Roboto', sans-serif;
   border-radius: 8px;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 18.75px;
-  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out, transform 200ms ease-in-out;
+  transform: translateY(0);
 }
 
 .btn:disabled {
@@ -51,4 +54,8 @@
 
 .btn_alternate:disabled {
   opacity: 30%;
+}
+
+.btn:active {
+  transform: translateY(2px);
 }
