@@ -3,13 +3,33 @@
 <html lang="ru">
     <head>
         <style>
+            :root {
+                --text-color: #000;
+                --border-color: #000;
+            }
+
             html[data-theme-dark] {
                 background: #000;
+                --text-color: #fff;
+                --border-color: #fff;
             }
+
+            .box {
+                margin: 20px 0 0 50px;
+                max-width: 300px;
+                border: 1px solid var(--border-color);
+                color: var(--text-color);
+                padding: 30px;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
         </style>
+        <link rel="stylesheet" href="theme-changer.css">
         <script defer src="./theme-changer.js"></script>
     </head>
     <body>
         <input type="checkbox" id="theme-changer">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quia?</div>
     </body>
 </html>
