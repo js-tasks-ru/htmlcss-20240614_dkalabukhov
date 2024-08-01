@@ -38,6 +38,7 @@
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
   border-color: var(--blue);
   background-color: var(--blue);
+  animation: 0.3s ease-out pulse;
 }
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
@@ -54,4 +55,14 @@
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__title {
   color: var(--grey-2);
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0 #bdc3c7;
+  }
+
+  to {
+    box-shadow: 0 0 0 1.25rem rgba(189, 195, 199, 0.2);
+  }
 }
