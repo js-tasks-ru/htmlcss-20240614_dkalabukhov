@@ -31,7 +31,13 @@
   display: flex;
   height: 20px;
   width: 100%;
+}
+
+.skeleton__strip,
+.skeleton__avatar {
   background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+  background-size: 200%;
+  animation: 1.5s linear infinite movingBackground;
 }
 
 .skeleton__strip_small {
@@ -46,3 +52,13 @@
   margin-top: 8px;
 }
 
+
+@keyframes movingBackground {
+  from {
+    background-position: 100%;
+  }
+
+  to {
+    background-position: -100%;
+  }
+}
