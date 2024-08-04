@@ -20,7 +20,8 @@
   border: 1px solid var(--grey-2);
   border-radius: 16px;
   padding: 2px;
-  position: relative;
+  display: flex;
+  align-items: center;
   transition: all 0.5s ease;
 }
 
@@ -29,11 +30,8 @@
   height: 24px;
   background-color: var(--grey-2);
   border-radius: 50%;
-  position: absolute;
-  left: 4%;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: left 0.5s ease;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
 }
 
 .toggler__title {
@@ -49,7 +47,7 @@
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__circle {
-  left: 48%;
+  transform: translateX(22px);
 }
 
 .toggler__input:disabled ~ .toggler__state .toggler__control {
