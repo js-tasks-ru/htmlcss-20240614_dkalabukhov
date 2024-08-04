@@ -4,9 +4,9 @@
 @import '../../components/header/header.css';
 @import '../../components/mainly/mainly.css';
 @import '../../components/footer/footer.css';
-@import '../../components/histogram/histogram.css';
 @import '../../components/card/card.css';
 @import '../../03-lection1/01-button/button.css';
+@import '../../04-lection2/01-histogram/histogram.css';
 
 :root {
     --white: #ffffff;
@@ -30,8 +30,6 @@
     --container-width: 1110px;
     --container-padding: 0;
 
-    --main-background: #F9FAFC;
-
     --modal-background: #C4C4C4;
     --modal-title-color: #334D6E;
 
@@ -39,6 +37,15 @@
     --calendar-week-days: #90A0B7;
     --calendar-item-range-mid: rgba(160, 177, 245, 0.2);
 
+    /* Ligt&Dark themes */
+    --header-home-bg: var(--white);
+    --header-logo-item-bg: var(--black);
+    --header-heading-color: var(--black);
+    --main-home-bg: #F9FAFC;
+    --card-bg: var(--white);
+    --card-text-color: var(--black);
+    --footer-home-bg: var(--white);
+    --footer-text-color: var(--black);
 }
 
 body {

@@ -1,5 +1,7 @@
 .footer {
   padding: 71px 0 136px;
+  background-color: var(--footer-home-bg);
+  color: var(--footer-text-color);
 }
 
 .footer__container {

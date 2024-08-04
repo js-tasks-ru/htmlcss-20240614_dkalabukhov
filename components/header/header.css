@@ -1,6 +1,6 @@
 .header {
   padding: 25px 0 77px;
-  background-color: var(--white);
+  background-color: var(--header-home-bg);
 }
 
 .header_inner {
@@ -17,12 +17,18 @@
   display: flex;
 }
 
+.header__logo-item {
+  color: var(--header-logo-item-bg);
+  fill: currentColor;
+}
+
 .header__heading {
   font-family: Inter, sans-serif;
   font-size: 50px;
   font-weight: 500;
   line-height: 64px;
   margin-top: 41px;
+  color: var(--header-heading-color);
 }
 
 @media (max-width: 768px) {
