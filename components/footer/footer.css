@@ -13,15 +13,29 @@
   padding: var(--container-padding);
 }
 
+.footer_inner {
+  padding: 92px 0 56px;
+  background-color: var(--main-background);
+}
+
 .footer__heading {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 38px;
   font-weight: 500;
   line-height: 48px;
 }
 
+.footer_inner .footer__heading {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--grey-3);
+}
+
 .footer__content {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   padding-top: 32px;
   max-width: 640px;
   font-size: 16px;
