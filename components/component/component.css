@@ -11,3 +11,9 @@
   line-height: 38px;
   color: var(--grey-4);
 }
+
+@media (max-width: 768px) {
+  .component {
+    flex: 1;
+  }
+}

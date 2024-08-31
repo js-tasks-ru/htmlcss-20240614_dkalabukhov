@@ -3,6 +3,11 @@
   height: 102px;
 }
 
+.avatar_preview {
+  width: 200px;
+  height: auto;
+}
+
 .avatar__img {
   border-radius: 50%;
   object-fit: cover;

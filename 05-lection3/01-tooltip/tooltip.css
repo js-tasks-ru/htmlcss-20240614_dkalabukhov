@@ -3,6 +3,10 @@
   display: inline-block;
 }
 
+.tooltip_preview .tooltip__bubble {
+  display: block;
+}
+
 .tooltip__bubble {
   display: none;
   white-space: nowrap;

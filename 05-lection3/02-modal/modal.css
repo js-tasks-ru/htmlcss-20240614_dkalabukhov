@@ -11,6 +11,25 @@
   opacity: 0.8;
 }
 
+.modal_preview {
+  display: block;
+  position: static;
+  border: 1px solid var(--grey-2);
+  border-radius: 8px;
+}
+
+.modal_preview .modal__body {
+  padding: 1rem;
+}
+
+.modal_preview .modal__title {
+  font-size: 14px;
+}
+
+.modal_preview .modal__content {
+  font-size: 9px;
+}
+
 .modal__body {
   background-color: var(--white);
   padding: 30px 40px 33px;

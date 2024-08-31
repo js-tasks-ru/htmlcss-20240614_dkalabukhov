@@ -4,13 +4,14 @@
 }
 
 .header_inner {
-  padding: 0 0 82px;
+  padding: 25px 0;
+  background-color: var(--light-grey);
 }
 
 .header__container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: var(--container-padding);
+  padding: 0 var(--container-padding);
 }
 
 .header__headline {
@@ -34,6 +35,10 @@
 @media (max-width: 768px) {
   .header {
     padding-bottom: 60px;
+  }
+
+  .header_inner {
+    padding-bottom: 25px;
   }
 
   .header__headline {

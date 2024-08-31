@@ -9,6 +9,12 @@
 @import '../../components/menu/menu.css';
 @import '../../03-lection1/01-button/button.css';
 @import '../../04-lection2/01-histogram/histogram.css';
+@import '../../05-lection3/01-tooltip/tooltip.css';
+@import '../../07-lection5/01-checkbox/checkbox.css';
+@import '../../07-lection5/02-radio/radio.css';
+@import '../../05-lection3/03-calendar/calendar.css';
+@import '../../05-lection3/02-modal/modal.css';
+@import '../../06-lection4/01-avatar/avatar.css';
 
 :root {
     --white: #ffffff;
@@ -21,6 +27,7 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --light-grey: #F9FAFC;
 
     --error: var(--red);
     --success: var(--blue);
@@ -44,7 +51,7 @@
     --header-home-bg: var(--white);
     --header-logo-item-bg: var(--black);
     --header-heading-color: var(--black);
-    --main-home-bg: #F9FAFC;
+    --main-home-bg: var(--light-grey);
     --card-bg: var(--white);
     --card-text-color: var(--black);
     --footer-home-bg: var(--white);
@@ -57,12 +64,12 @@ body {
 
 @media (max-width: 1280px) {
     :root {
-        --container-padding: 0 30px;
+        --container-padding: 30px;
     }
 }
 
 @media (max-width: 768px) {
     :root {
-        --container-padding: 0 16px;
+        --container-padding: 16px;
     }
 }

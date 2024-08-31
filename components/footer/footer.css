@@ -10,12 +10,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--container-padding);
+  padding: 0 var(--container-padding);
 }
 
 .footer_inner {
   padding: 92px 0 56px;
-  background-color: var(--main-background);
+  background-color: var(--light-grey);
 }
 
 .footer__heading {
