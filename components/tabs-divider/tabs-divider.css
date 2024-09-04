@@ -1,0 +1,5 @@
+.tabs-divider {
+  width: 100vw;
+  height: 1px;
+  background-color: var(--grey-2);
+}

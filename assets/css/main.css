@@ -7,6 +7,8 @@
 @import '../../components/card/card.css';
 @import '../../components/component/component.css';
 @import '../../components/menu/menu.css';
+@import '../../components/tabs/tabs.css';
+@import '../../components/tabs-divider/tabs-divider.css';
 @import '../../03-lection1/01-button/button.css';
 @import '../../04-lection2/01-histogram/histogram.css';
 @import '../../05-lection3/01-tooltip/tooltip.css';
@@ -51,11 +53,13 @@
     --header-home-bg: var(--white);
     --header-logo-item-bg: var(--black);
     --header-heading-color: var(--black);
+    --tabs-nav-bg: var(--white);
     --main-home-bg: var(--light-grey);
     --card-bg: var(--white);
     --card-text-color: var(--black);
     --footer-home-bg: var(--white);
     --footer-text-color: var(--black);
+    --dark-bg: var(--black);
 }
 
 body {
