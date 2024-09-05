@@ -64,3 +64,28 @@
   color: var(--dark-bg);
 }
 
+#all-tab:checked ~ .mainly__container .tabs__tab-content-all-tab,
+#atoms-tab:checked ~ .mainly__container .tabs__tab-content-atoms-tab,
+#molecules-tab:checked ~ .mainly__container .tabs__tab-content-molecules-tab,
+#oragnisms-tab:checked ~ .mainly__container .tabs__tab-content-organisms-tab {
+  display: block;
+}
+
+.tabs__tab-content {
+  display: none;
+}
+
+.tabs__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(367px, auto);
+  grid-gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .tabs__cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(315px, auto);
+    grid-gap: 16px;
+  }
+}

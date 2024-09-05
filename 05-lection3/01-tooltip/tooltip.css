@@ -7,6 +7,10 @@
   display: block;
 }
 
+.tooltip_preview {
+  transform: translateY(28px);
+}
+
 .tooltip__bubble {
   display: none;
   white-space: nowrap;
