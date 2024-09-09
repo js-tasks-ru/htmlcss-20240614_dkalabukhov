@@ -6,9 +6,14 @@
   top: 0;
   left: 0;
   background-color:rgba(196, 196, 196, 0.8);
-  transform: translateX(-100vw);
+  transform: translateX(-200vw);
   transition: transform 250ms linear;
   display: flex;
+  z-index: 2;
+}
+
+.burger-menu_mainpage .burger-menu__navbar .burger-menu__navbar-item:last-child {
+  margin-top: 16px;
 }
 
 .burger-menu[data-open] {
@@ -27,7 +32,6 @@
   justify-items: center;
   align-items: center;
   padding-bottom: 32px;
-  border-bottom: 1px solid var(--grey-2);
 }
 
 .burger-menu__btn-close {

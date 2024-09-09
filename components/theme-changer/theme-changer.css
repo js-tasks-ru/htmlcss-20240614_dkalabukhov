@@ -1,0 +1,9 @@
+.theme-changer__icon {
+  color: var(--grey-3);
+}
+
+@media (max-width: 768px) {
+  .theme-changer {
+    display: none;
+  }
+}

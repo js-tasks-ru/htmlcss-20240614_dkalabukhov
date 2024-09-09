@@ -12,6 +12,10 @@
   background-color: var(--tabs-nav-bg);
 }
 
+.tabs__nav_component {
+  margin-top: 2rem;
+}
+
 .tabs__menu {
   display: flex;
   font-family: Inter, sans-serif;
@@ -48,10 +52,30 @@
   transition: transform 250ms ease-in-out;
 }
 
+.tabs__menu-label_uppercase {
+  text-transform: uppercase;
+}
+
+.tabs__code-content {
+  padding: 3rem 0;
+}
+
+.tabs__pre {
+  overflow-x: auto;
+}
+
+.tabs__code {
+  font-family: monospace, monospace;
+  font-size: 1rem;
+}
+
 #all-tab:checked ~ .tabs__nav label[for="all-tab"]:after,
 #atoms-tab:checked ~ .tabs__nav label[for="atoms-tab"]:after,
 #molecules-tab:checked ~ .tabs__nav label[for="molecules-tab"]:after,
 #oragnisms-tab:checked ~ .tabs__nav label[for="oragnisms-tab"]:after,
+#html:checked ~ .tabs__nav label[for="html"]:after,
+#css:checked ~ .tabs__nav label[for="css"]:after,
+#js:checked ~ .tabs__nav label[for="js"]:after,
 .tabs__menu-label:hover:after {
   transform: scaleX(1);
 }
@@ -60,6 +84,9 @@
 #atoms-tab:checked ~ .tabs__nav label[for="atoms-tab"],
 #molecules-tab:checked ~ .tabs__nav label[for="molecules-tab"],
 #oragnisms-tab:checked ~ .tabs__nav label[for="oragnisms-tab"],
+#html:checked ~ .tabs__nav label[for="html"],
+#css:checked ~ .tabs__nav label[for="css"],
+#js:checked ~ .tabs__nav label[for="js"],
 .tabs__menu-label:hover {
   color: var(--dark-bg);
 }
@@ -67,7 +94,10 @@
 #all-tab:checked ~ .mainly__container .tabs__tab-content-all-tab,
 #atoms-tab:checked ~ .mainly__container .tabs__tab-content-atoms-tab,
 #molecules-tab:checked ~ .mainly__container .tabs__tab-content-molecules-tab,
-#oragnisms-tab:checked ~ .mainly__container .tabs__tab-content-organisms-tab {
+#oragnisms-tab:checked ~ .mainly__container .tabs__tab-content-organisms-tab,
+#html:checked ~ .tabs__code-content .tabs__tab-content-html,
+#css:checked ~ .tabs__code-content .tabs__tab-content-css,
+#js:checked ~ .tabs__code-content .tabs__tab-content-js {
   display: block;
 }
 
@@ -87,5 +117,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(315px, auto);
     grid-gap: 16px;
+  }
+  .tabs__code-content {
+    padding: 1.5rem 0;
   }
 }

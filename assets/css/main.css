@@ -13,6 +13,10 @@
 @import '../../components/element-preview/element-preview.css';
 @import '../../components/grid-4-columns/grid-4-columns.css';
 @import '../../components/grid-3-columns/grid-3-columns.css';
+@import '../../components/theme-changer/theme-changer.css';
+@import '../../components/open-menu/open-menu.css';
+@import '../../components/dark-mode/dark-mode.css';
+@import '../../09-lection7/01-burger-menu/burger-menu.css';
 @import '../../04-lection2/02-skeleton/skeleton.css';
 @import '../../03-lection1/01-button/button.css';
 @import '../../04-lection2/01-histogram/histogram.css';

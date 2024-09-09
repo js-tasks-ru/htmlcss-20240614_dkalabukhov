@@ -1,0 +1,14 @@
+.open-menu {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .open-menu {
+    display: block;
+  }
+}
