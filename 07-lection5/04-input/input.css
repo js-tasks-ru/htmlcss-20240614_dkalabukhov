@@ -27,7 +27,8 @@
   font-size: 20px;
   line-height: 26px;
   color: var(--grey-4);
-  position: relative
+  position: relative;
+  transition: all 0.25s ease-in;
 }
 
 .form-group__icon {
