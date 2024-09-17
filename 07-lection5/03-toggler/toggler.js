@@ -1,8 +1,13 @@
 (function changeTogglerTitle() {
-  const togglerInput = document.querySelectorAll('.toggler__input');
+  const togglerInputs = document.querySelectorAll('.toggler__input');
+  const inputs = Array.from(togglerInputs);
 
   const render = () => {
-    togglerInput.forEach((toggler) => {
+    for (const toggler of inputs) {
+      if (toggler.parentElement.classList.contains('toggler_theme-changer') ||
+      toggler.parentElement.classList.contains('toggler_darkmode')) {
+        continue;
+      }
       if (toggler.checked) {
         toggler.parentElement.querySelector('.toggler__title').textContent = 'On';
       } else {
@@ -11,10 +16,10 @@
       if (toggler.disabled) {
         toggler.parentElement.querySelector('.toggler__title').textContent = 'Disabled';
       }
-    })
+    }
   }
 
-  togglerInput.forEach((input) => {
+  togglerInputs.forEach((input) => {
     input.addEventListener('change', (e) => {
       render();
     })

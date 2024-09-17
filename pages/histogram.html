@@ -49,11 +49,11 @@
                           </div>
                           <h4 class="burger-menu__heading">Components</h4>
                           <ul class="burger-menu__navbar">
-                              <li class="burger-menu__navbar-item"><a href="./modal.html" class="burger-menu__link burger-menu__link_current">Modal</a></li>
+                              <li class="burger-menu__navbar-item"><a href="./modal.html" class="burger-menu__link">Modal</a></li>
                               <li class="burger-menu__navbar-item"><a href="./tooltip.html" class="burger-menu__link">Tooltip</a></li>
                               <li class="burger-menu__navbar-item"><a href="./avatar.html" class="burger-menu__link">Avatar</a></li>
                               <li class="burger-menu__navbar-item"><a href="./calendar.html" class="burger-menu__link">Calendar</a></li>
-                              <li class="burger-menu__navbar-item"><a href="./histogram.html" class="burger-menu__link">Histogram</a></li>
+                              <li class="burger-menu__navbar-item"><a href="./histogram.html" class="burger-menu__link burger-menu__link_current">Histogram</a></li>
                               <li class="burger-menu__navbar-item"><a href="./formgroup.html" class="burger-menu__link">Custom form elements</a></li>
                               <li class="burger-menu__navbar-item"><a href="../index.html" class="burger-menu__link">Main page</a></li>
                           </ul>
@@ -113,44 +113,63 @@
             <nav class="menu">
                 <h4 class="menu__heading">Components</h4>
                 <ul class="menu__list">
-                    <li class="menu__item"><a href="./modal.html" class="menu__link menu__link_current">Modal</a></li>
+                    <li class="menu__item"><a href="./modal.html" class="menu__link">Modal</a></li>
                     <li class="menu__item"><a href="./tooltip.html" class="menu__link">Tooltip</a></li>
                     <li class="menu__item"><a href="./avatar.html" class="menu__link">Avatar</a></li>
                     <li class="menu__item"><a href="./calendar.html" class="menu__link">Calendar</a></li>
-                    <li class="menu__item"><a href="./histogram.html" class="menu__link">Histogram</a></li>
+                    <li class="menu__item"><a href="./histogram.html" class="menu__link menu__link_current">Histogram</a></li>
                     <li class="menu__item"><a href="./formgroup.html" class="menu__link">Custom form elements</a></li>
                     <li class="menu__item"><a href="../index.html" class="menu__link">Main page</a></li>
                 </ul>
             </nav>
             <section class="component">
-                <h3 class="component__heading">Modal</h3>
-                <button class="btn btn_primary" id="modal-open">Open modal</button>
-                <div class="modal" id="modal">
-                    <div class="modal__body">
-                        <button id="modal-close" class="modal__btn-close">
-                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z" fill="#212429"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#212429"/>
-                          </svg>
-                        </button>
-                        <header class="modal__header">
-                            <h5 class="modal__title">Modal title</h5>
-                        </header>
-                        <p class="modal__content">
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                        </p>
-                    </div>
-                </div>
+                <h3 class="component__heading">Histogram</h3>
+                <div class="histogram">
+                  <header class="histogram__header">
+                      <h5 class="histogram__total-orders">Total orders</h5>
+                      <a class="histogram__link" href="#">View all</a>
+                  </header>
+                  <div class="histogram__orders-count">50254</div>
+                  <div class="histogram__bars">
+                      <div class="histogram__bar" style="height: 100%"></div>
+                      <div class="histogram__bar" style="height: 70%"></div>
+                      <div class="histogram__bar" style="height: 44%"></div>
+                      <div class="histogram__bar" style="height: 78%"></div>
+                      <div class="histogram__bar" style="height: 44%"></div>
+                      <div class="histogram__bar" style="height: 60%"></div>
+                      <div class="histogram__bar" style="height: 78%"></div>
+                      <div class="histogram__bar" style="height: 100%"></div>
+                      <div class="histogram__bar" style="height: 22%"></div>
+                      <div class="histogram__bar" style="height: 44%"></div>
+                      <div class="histogram__bar" style="height: 60%"></div>
+                      <div class="histogram__bar" style="height: 70%"></div>
+                      <div class="histogram__bar" style="height: 22%"></div>
+                      <div class="histogram__bar" style="height: 100%"></div>
+                      <div class="histogram__bar" style="height: 22%"></div>
+                      <div class="histogram__bar" style="height: 78%"></div>
+                      <div class="histogram__bar" style="height: 60%"></div>
+                      <div class="histogram__bar" style="height: 44%"></div>
+                      <div class="histogram__bar" style="height: 70%"></div>
+                      <div class="histogram__bar" style="height: 60%"></div>
+                      <div class="histogram__bar" style="height: 22%"></div>
+                      <div class="histogram__bar" style="height: 78%"></div>
+                      <div class="histogram__bar" style="height: 70%"></div>
+                      <div class="histogram__bar" style="height: 90%"></div>
+                      <div class="histogram__bar" style="height: 60%"></div>
+                      <div class="histogram__bar" style="height: 22%"></div>
+                      <div class="histogram__bar" style="height: 60%"></div>
+                      <div class="histogram__bar" style="height: 22%"></div>
+                      <div class="histogram__bar" style="height: 70%"></div>
+                      <div class="histogram__bar" style="height: 34%"></div>
+                  </div>
+              </div>
                 <div class="tabs">
                   <input class="tabs__input" type="radio" name="tabs" id="html" checked>
                   <input class="tabs__input" type="radio" name="tabs" id="css">
-                  <input class="tabs__input" type="radio" name="tabs" id="js">
                   <div class="tabs__nav tabs__nav_component">
                     <ul class="tabs__menu">
                       <li class="tabs__menu-item"><label class="tabs__menu-label tabs__menu-label_uppercase" for="html">Html</label></li>
                       <li class="tabs__menu-item"><label class="tabs__menu-label tabs__menu-label_uppercase" for="css">Css</label></li>
-                      <li class="tabs__menu-item"><label class="tabs__menu-label tabs__menu-label_uppercase" for="js">Js</label></li>
                     </ul>
                   </div>
                   <div class="tabs-divider tabs-divider_component"></div>
@@ -158,30 +177,43 @@
                     <div class="tabs__tab-content tabs__tab-content-html">
                       <pre class="tabs__pre">
                         <code class="tabs__code">
-&lt;button class=&quot;btn btn_primary&quot; id=&quot;modal-open&quot;&gt;Open modal&lt;/button&gt;
-&lt;div class=&quot;modal&quot; id=&quot;modal&quot;&gt;
-  &lt;div class=&quot;modal__body&quot;&gt;
-    &lt;button id=&quot;modal-close&quot; class=&quot;modal__btn-close&quot;&gt;
-      &lt;svg width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071
-          6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237
-          17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z&quot;
-          fill=&quot;#212429&quot;/&gt;
-        &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711
-          5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834
-          19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z&quot;
-          fill=&quot;#212429&quot;/&gt;
-      &lt;/svg&gt;
-    &lt;/button&gt;
-    &lt;header class=&quot;modal__header&quot;&gt;
-      &lt;h5 class=&quot;modal__title&quot;&gt;Modal title&lt;/h5&gt;
-    &lt;/header&gt;
-    &lt;p class=&quot;modal__content&quot;&gt;
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-      duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-      duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-    &lt;/p&gt;
+&lt;div class=&quot;histogram&quot;&gt;
+  &lt;header class=&quot;histogram__header&quot;&gt;
+    &lt;h5 class=&quot;histogram__total-orders&quot;&gt;Total orders&lt;/h5&gt;
+    &lt;a class=&quot;histogram__link&quot; href=&quot;#&quot;&gt;View all&lt;/a&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;histogram__orders-count&quot;&gt;50254&lt;/div&gt;
+  &lt;div class=&quot;histogram__bars&quot;&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 100&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 70&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 44&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 78&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 44&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 60&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 78&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 100&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 22&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 44&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 60&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 70&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 22&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 100&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 22&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 78&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 60&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 44&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 70&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 60&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 22&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 78&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 70&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 90&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 60&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 22&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 60&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 22&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 70&#37;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 34&#37;&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
                         </code>
@@ -190,80 +222,76 @@
                     <div class="tabs__tab-content tabs__tab-content-css">
                       <pre class="tabs__pre">
                         <code class="tabs__code">
-.modal {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  background-color: rgba(196, 196, 196, 0.8);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.modal__body {
-  background-color: var(--white);
-  padding: 30px 40px 33px;
-  max-width: 428px;
-  border-radius: 8px;
-  position: relative;
-}
-
-.modal__header {
-  margin-bottom: 14px;
-}
-
-.modal__title {
-  color: #334D6E;
-  font-family: Inter, sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.modal__btn-close {
-  position: absolute;
-  right: 10px;
-  top: 10px;
+.histogram {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  flex-direction: column;
+  padding: 16px 24px 24px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
 }
 
-.modal__content {
+.histogram__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.histogram__total-orders {
   font-family: Inter, sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
-  color: var(--grey-4);
+  color: var(--black);
+  margin: 0;
 }
-                        </code>
-                      </pre>
-                    </div>
-                    <div class="tabs__tab-content tabs__tab-content-js">
-                      <pre class="tabs__pre">
-                        <code class="tabs__code">
-(function() {
-  const close = document.getElementById('modal-close');
-  const modal = document.getElementById('modal');
-  const modalOpen = document.getElementById('modal-open');
 
-  if (!close || !modalOpen || !modal) {
-      return;
+.histogram__link {
+  margin-top: 3px;
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  line-height: 24px;
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.histogram__link:hover {
+  color: var(--secondary);
+}
+
+.histogram__orders-count {
+  margin: 6px 0 39px;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.histogram__bars {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  align-items: flex-end;
+  height: 50px;
+  width: 100%;
+  gap: 1px;
+  animation: appear 0.6s ease-in;
+}
+
+.histogram__bar {
+  flex: 1 0;
+  background-color: var(--blue);
+}
+
+@keyframes appear {
+  from {
+    transform: scaleY(0);
+    transform-origin: bottom center;
   }
 
-  modalOpen.addEventListener('click', () => {
-      modal.style.display = 'flex';
-      document.body.overflow = 'hidden';
-  });
-
-  close.addEventListener('click', () => {
-      modal.style.display = 'none';
-      document.body.overflow = 'initial';
-  });
-})();
+  to {
+    transform: scaleY(1);
+    transform-origin: bottom center;
+  }
+}
                         </code>
                       </pre>
                     </div>
@@ -278,7 +306,6 @@
         </div>
     </footer>
   </div>
-  <script src="../05-lection3/02-modal/index.js"></script>
   <script src="../09-lection7/01-burger-menu/burger-menu.js"></script>
 </body>
 </html>

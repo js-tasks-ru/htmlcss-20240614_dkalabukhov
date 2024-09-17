@@ -6,7 +6,11 @@
   grid-auto-flow: column;
 }
 
-@media (max-width: 760px) {
+.grid-3-columns_mb {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
   .grid-3-columns {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, auto);
