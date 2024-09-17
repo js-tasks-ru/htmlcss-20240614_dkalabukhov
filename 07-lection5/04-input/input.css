@@ -1,5 +1,7 @@
-.from-group {
+.form-group {
   font-family: Inter, sans-serif;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .form-group__title {
@@ -25,6 +27,8 @@
   font-size: 20px;
   line-height: 26px;
   color: var(--grey-4);
+  position: relative;
+  transition: all 0.25s ease-in;
 }
 
 .form-group__icon {

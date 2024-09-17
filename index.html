@@ -11,89 +11,740 @@
         <div class="page">
             <header class="header">
                 <div class="header__container">
+                    <div class="header__headline">
+                        <button class="open-menu" id="burger-menu-open">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 11.4477 2.44772 11 3 11H21C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13H3C2.44772 13 2 12.5523 2 12Z" fill="#212429"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z" fill="#212429"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 18C2 17.4477 2.44772 17 3 17H21C21.5523 17 22 17.4477 22 18C22 18.5523 21.5523 19 21 19H3C2.44772 19 2 18.5523 2 18Z" fill="#212429"/>
+                            </svg>
+                        </button>
+                        <div class="burger-menu burger-menu_mainpage" id="burger-menu">
+                            <div class="burger-menu__body">
+                                <header class="burger-menu__header">
+                                    <button id="burger-menu-close" class="burger-menu__btn-close">Close menu</button>
+                                    <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_18829_459)">
+                                        <rect y="1" width="30" height="30" fill="#212429"/>
+                                        <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                                        <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_18829_459">
+                                        <rect width="110" height="32" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </header>
+                                <nav class="burger-menu__navigation">
+                                    <div class="dark-mode">
+                                      <p class="dark-mode__title">Dark mode</p>
+                                      <label class="toggler toggler_darkmode">
+                                        <input type="checkbox" class="toggler__input" name="toggler">
+                                        <div class="toggler__state">
+                                            <div class="toggler__control">
+                                                <div class="toggler__circle"></div>
+                                            </div>
+                                        </div>
+                                      </label>
+                                    </div>
+                                    <h4 class="burger-menu__heading">Components</h4>
+                                    <ul class="burger-menu__navbar">
+                                        <li class="burger-menu__navbar-item"><a href="./modal.html" class="burger-menu__link">Modal</a></li>
+                                        <li class="burger-menu__navbar-item"><a href="./tooltip.html" class="burger-menu__link">Tooltip</a></li>
+                                        <li class="burger-menu__navbar-item"><a href="./avatar.html" class="burger-menu__link">Avatar</a></li>
+                                        <li class="burger-menu__navbar-item"><a href="./calendar.html" class="burger-menu__link">Calendar</a></li>
+                                        <li class="burger-menu__navbar-item"><a href="./histogram.html" class="burger-menu__link">Histogram</a></li>
+                                        <li class="burger-menu__navbar-item"><a href="./formgroup.html" class="burger-menu__link">Custom form elements</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <svg classs="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_17869_61)">
+                            <rect class="header__logo-item" y="1" width="30" height="30" fill="#212429"/>
+                            <rect class="header__logo-item" x="38" width="32" height="32" rx="16" fill="#212429"/>
+                            <path class="header__logo-item" d="M78 0L110 32H78V0Z" fill="#212429"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_17869_61">
+                            <rect width="110" height="32" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="theme-changer">
+                            <label class="toggler toggler_theme-changer">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_17868_394)">
+                                <path class="theme-changer__icon" fill-rule="evenodd" clip-rule="evenodd" d="M12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8ZM6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12Z" fill="currentColor"/>
+                                <path class="theme-changer__icon" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C12.5523 0 13 0.447715 13 1V3C13 3.55228 12.5523 4 12 4C11.4477 4 11 3.55228 11 3V1C11 0.447715 11.4477 0 12 0Z" fill="currentColor"/>
+                                <path class="theme-changer__icon" fill-rule="evenodd" clip-rule="evenodd" d="M12 20C12.5523 20 13 20.4477 13 21V23C13 23.5523 12.5523 24 12 24C11.4477 24 11 23.5523 11 23V21C11 20.4477 11.4477 20 12 20Z" fill="currentColor"/>
+                                <path class="theme-changer__icon" fill-rule="evenodd" clip-rule="evenodd" d="M3.51286 3.51286C3.90339 3.12234 4.53655 3.12234 4.92708 3.51286L6.34708 4.93286C6.7376 5.32339 6.7376 5.95655 6.34708 6.34708C5.95655 6.7376 5.32339 6.7376 4.93286 6.34708L3.51286 4.92708C3.12234 4.53655 3.12234 3.90339 3.51286 3.51286Z" fill="currentColor"/>
+                                <path class="theme-changer__icon" fill-rule="evenodd" clip-rule="evenodd" d="M17.653 17.6529C18.0435 17.2624 18.6767 17.2624 19.0672 17.6529L20.4872 19.0729C20.8777 19.4634 20.8777 20.0966 20.4872 20.4871C20.0967 20.8776 19.4635 20.8776 19.073 20.4871L17.653 19.0671C17.2625 18.6766 17.2625 18.0434 17.653 17.6529Z" fill="currentColor"/>
+                                <path class="theme-changer__icon" fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 11.4477 0.447715 11 1 11H3C3.55228 11 4 11.4477 4 12C4 12.5523 3.55228 13 3 13H1C0.447715 13 0 12.5523 0 12Z" fill="currentColor"/>
+                                <path class="theme-changer__icon" fill-rule="evenodd" clip-rule="evenodd" d="M20 12C20 11.4477 20.4477 11 21 11H23C23.5523 11 24 11.4477 24 12C24 12.5523 23.5523 13 23 13H21C20.4477 13 20 12.5523 20 12Z" fill="currentColor"/>
+                                <path class="theme-changer__icon" fill-rule="evenodd" clip-rule="evenodd" d="M6.34708 17.6529C6.7376 18.0434 6.7376 18.6766 6.34708 19.0671L4.92708 20.4871C4.53655 20.8776 3.90339 20.8776 3.51286 20.4871C3.12234 20.0966 3.12234 19.4634 3.51286 19.0729L4.93286 17.6529C5.32339 17.2624 5.95655 17.2624 6.34708 17.6529Z" fill="currentColor"/>
+                                <path class="theme-changer__icon" fill-rule="evenodd" clip-rule="evenodd" d="M20.4872 3.51286C20.8777 3.90339 20.8777 4.53655 20.4872 4.92708L19.0672 6.34708C18.6767 6.7376 18.0435 6.7376 17.653 6.34708C17.2625 5.95655 17.2625 5.32339 17.653 4.93286L19.073 3.51286C19.4635 3.12234 20.0967 3.12234 20.4872 3.51286Z" fill="currentColor"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_17868_394">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                              </svg>
+                              <input type="checkbox" class="toggler__input" name="toggler">
+                              <div class="toggler__state">
+                                  <div class="toggler__control">
+                                      <div class="toggler__circle"></div>
+                                  </div>
+                              </div>
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="theme-changer__icon" fill-rule="evenodd" clip-rule="evenodd" d="M12.0811 2.50904C12.2746 2.85242 12.2484 3.27745 12.0141 3.59442C11.1598 4.75008 10.7488 6.17395 10.8557 7.60706C10.9625 9.04018 11.5802 10.3873 12.5964 11.4035C13.6126 12.4197 14.9597 13.0374 16.3929 13.1443C17.826 13.2511 19.2498 12.8401 20.4055 11.9859L20.9999 12.79L21.9957 12.882C21.8209 14.7734 21.1111 16.5758 19.9493 18.0785C18.7875 19.5811 17.2218 20.7218 15.4353 21.3671C13.6489 22.0124 11.7156 22.1355 9.86177 21.7221C8.0079 21.3088 6.3101 20.376 4.96702 19.0329C3.62394 17.6898 2.69115 15.992 2.27778 14.1381C1.86441 12.2843 1.98757 10.351 2.63284 8.56459C3.27811 6.77816 4.4188 5.21244 5.92145 4.05065C7.4241 2.88886 9.22654 2.17904 11.1179 2.00426C11.5104 1.96799 11.8876 2.16566 12.0811 2.50904ZM19.5608 14.6836C18.5077 15.0646 17.3781 15.2233 16.2441 15.1387C14.3333 14.9962 12.5371 14.1726 11.1822 12.8177C9.82729 11.4628 9.0037 9.66661 8.8612 7.7558C8.77664 6.62183 8.93528 5.4922 9.31629 4.43908C8.53868 4.72043 7.8055 5.12204 7.14478 5.63289C5.94266 6.56232 5.0301 7.81489 4.51389 9.24404C3.99767 10.6732 3.89914 12.2198 4.22984 13.7029C4.56054 15.186 5.30677 16.5442 6.38123 17.6187C7.45569 18.6931 8.81394 19.4394 10.297 19.7701C11.7801 20.1008 13.3267 20.0022 14.7559 19.486C16.185 18.9698 17.4376 18.0573 18.367 16.8551C18.8779 16.1944 19.2795 15.4612 19.5608 14.6836Z" fill="currentColor"/>
+                              </svg>
+                            </label>
+                        </div>
+                    </div>
                     <h1 class="header__heading">Reusable component library</h1>
                 </div>
             </header>
             <main class="mainly">
-                <div class="mainly__container">
-                    <div class="mainly__cards">
-                        <a href="#" class="mainly__card-link">
-                            <div class="card">
-                                <div class="card__component-container"></div>
-                                <h5 class="card__title">Tootlip</h5>
+                <div class="tabs">
+                    <input type="radio" checked class="tabs__input" name="tabs" id="all-tab">
+                    <input type="radio" class="tabs__input" name="tabs" id="atoms-tab">
+                    <input type="radio" class="tabs__input" name="tabs" id="molecules-tab">
+                    <input type="radio" class="tabs__input" name="tabs" id="oragnisms-tab">
+                    <nav class="tabs__nav">
+                        <div class="tabs__container">
+                            <ul class="tabs__menu">
+                                <li class="tabs__menu-item"><label class="tabs__menu-label" for="all-tab">All components</label></li>
+                                <li class="tabs__menu-item"><label class="tabs__menu-label" for="atoms-tab">Atoms</label></li>
+                                <li class="tabs__menu-item"><label class="tabs__menu-label" for="molecules-tab">Molecules</label></li>
+                                <li class="tabs__menu-item"><label class="tabs__menu-label" for="oragnisms-tab">Organisms</label></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="tabs-divider"></div>
+                    <section class="mainly__container">
+                        <div class="tabs__tab-content tabs__tab-content-all-tab">
+                            <div class="tabs__cards">
+                                <a href="./pages/tooltip.html" class="card">
+                                    <div class="card__body">
+                                        <div class="tooltip tooltip_preview">
+                                            <div class="tooltip__trigger">
+                                                <img src="05-lection3/01-tooltip/tooltip__icon.png" alt="" srcset="">
+                                            </div>
+                                            <div class="tooltip__bubble">
+                                                Helper Text
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Tootlip</h4>
+                                        <p class="card__type">Atom</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/formgroup.html" class="card">
+                                    <div class="card__body">
+                                        <div class="custom-form-elements-container">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" name="checkbox">
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="checkbox__title">Default</div>
+                                                </div>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" name="checkbox" checked>
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="checkbox__title">Checked</div>
+                                                </div>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="radio" class="radio__input">
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <div class="radio__circle"></div>
+                                                    </div>
+                                                    <div class="radio__title">Default</div>
+                                                </div>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="radio" class="radio__input" checked>
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <div class="radio__circle"></div>
+                                                    </div>
+                                                    <div class="radio__title">Selected</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Custom form elements</h4>
+                                        <p class="card__type">Molecules</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/calendar.html" class="card">
+                                    <div class="card__body">
+                                        <div class="calendar calendar_preview">
+                                            <div class="calendar__title">October 2019</div>
+                                            <div class="calendar__wrapper">
+                                                <div class="calendar__inner">
+                                                    <span class="calendar__item calendar__item_day">Mon</span>
+                                                    <span class="calendar__item calendar__item_day">Tue</span>
+                                                    <span class="calendar__item calendar__item_day">Wed</span>
+                                                    <span class="calendar__item calendar__item_day">Thu</span>
+                                                    <span class="calendar__item calendar__item_day">Fri</span>
+                                                    <span class="calendar__item calendar__item_day">Sat</span>
+                                                    <span class="calendar__item calendar__item_day">Sun</span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item">1</span>
+                                                    <span class="calendar__item">2</span>
+                                                    <span class="calendar__item">3</span>
+                                                    <span class="calendar__item">4</span>
+                                                    <span class="calendar__item">5</span>
+                                                    <span class="calendar__item">6</span>
+                                                    <span class="calendar__item">7</span>
+                                                    <span class="calendar__item">8</span>
+                                                    <span class="calendar__item">9</span>
+                                                    <span class="calendar__item">10</span>
+                                                    <span class="calendar__item">11</span>
+                                                    <span class="calendar__item">12</span>
+                                                    <span class="calendar__item">13</span>
+                                                    <span class="calendar__item">14</span>
+                                                    <span class="calendar__item">15</span>
+                                                    <span class="calendar__item">16</span>
+                                                    <span class="calendar__item">17</span>
+                                                    <span class="calendar__item calendar__item_range-start">18</span>
+                                                    <span class="calendar__item calendar__item_range-mid">19</span>
+                                                    <span class="calendar__item calendar__item_range-mid">20</span>
+                                                    <span class="calendar__item calendar__item_range-mid">21</span>
+                                                    <span class="calendar__item calendar__item_range-mid">22</span>
+                                                    <span class="calendar__item calendar__item_range-end">23</span>
+                                                    <span class="calendar__item">24</span>
+                                                    <span class="calendar__item">25</span>
+                                                    <span class="calendar__item">26</span>
+                                                    <span class="calendar__item">27</span>
+                                                    <span class="calendar__item">28</span>
+                                                    <span class="calendar__item">29</span>
+                                                    <span class="calendar__item">30</span>
+                                                    <span class="calendar__item">31</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Calendar</h4>
+                                        <p class="card__type">Molecule</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/modal.html" class="card">
+                                    <div class="card__body">
+                                        <div class="modal modal_preview">
+                                            <div class="modal__body">
+                                                <button class="modal__btn-close">
+                                                    <img src="05-lection3/02-modal/x.svg" alt="close">
+                                                </button>
+                                                <header class="modal__header">
+                                                    <h5 class="modal__title">Modal title</h5>
+                                                </header>
+                                                <p class="modal__content">
+                                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Modal dialog</h4>
+                                        <p class="card__type">Organism</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/histogram.html" class="card">
+                                    <div class="card__body">
+                                        <div class="histogram histogram_preview">
+                                            <header class="histogram__header">
+                                                <h5 class="histogram__total-orders">Total orders</h5>
+                                            </header>
+                                            <div class="histogram__orders-count">50254</div>
+                                            <div class="histogram__bars">
+                                                <div class="histogram__bar" style="height: 100%"></div>
+                                                <div class="histogram__bar" style="height: 70%"></div>
+                                                <div class="histogram__bar" style="height: 44%"></div>
+                                                <div class="histogram__bar" style="height: 78%"></div>
+                                                <div class="histogram__bar" style="height: 44%"></div>
+                                                <div class="histogram__bar" style="height: 60%"></div>
+                                                <div class="histogram__bar" style="height: 78%"></div>
+                                                <div class="histogram__bar" style="height: 100%"></div>
+                                                <div class="histogram__bar" style="height: 22%"></div>
+                                                <div class="histogram__bar" style="height: 44%"></div>
+                                                <div class="histogram__bar" style="height: 60%"></div>
+                                                <div class="histogram__bar" style="height: 70%"></div>
+                                                <div class="histogram__bar" style="height: 22%"></div>
+                                                <div class="histogram__bar" style="height: 100%"></div>
+                                                <div class="histogram__bar" style="height: 22%"></div>
+                                                <div class="histogram__bar" style="height: 78%"></div>
+                                                <div class="histogram__bar" style="height: 60%"></div>
+                                                <div class="histogram__bar" style="height: 44%"></div>
+                                                <div class="histogram__bar" style="height: 70%"></div>
+                                                <div class="histogram__bar" style="height: 60%"></div>
+                                                <div class="histogram__bar" style="height: 22%"></div>
+                                                <div class="histogram__bar" style="height: 78%"></div>
+                                                <div class="histogram__bar" style="height: 70%"></div>
+                                                <div class="histogram__bar" style="height: 90%"></div>
+                                                <div class="histogram__bar" style="height: 60%"></div>
+                                                <div class="histogram__bar" style="height: 22%"></div>
+                                                <div class="histogram__bar" style="height: 60%"></div>
+                                                <div class="histogram__bar" style="height: 22%"></div>
+                                                <div class="histogram__bar" style="height: 70%"></div>
+                                                <div class="histogram__bar" style="height: 34%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Histogram</h4>
+                                        <p class="card__type">Organism</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/avatar.html" class="card">
+                                    <div class="card__body">
+                                        <div class="avatar avatar_preview">
+                                            <img src="06-lection4/01-avatar/public/avatar-200.jpg" alt="Avatar" class="avatar__img">
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Avatar</h4>
+                                        <p class="card__type">Atom</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                        <a href="#" class="mainly__card-link">
-                            <div class="card">
-                                <div class="card__component-container"></div>
-                                <h5 class="card__title">Custom form elements</h5>
+                        </div>
+                        <div class="tabs__tab-content tabs__tab-content-atoms-tab">
+                            <div class="tabs__cards">
+                                <a href="./pages/tooltip.html" class="card">
+                                    <div class="card__body">
+                                        <div class="tooltip tooltip_preview">
+                                            <div class="tooltip__trigger">
+                                                <img src="05-lection3/01-tooltip/tooltip__icon.png" alt="" srcset="">
+                                            </div>
+                                            <div class="tooltip__bubble">
+                                                Helper Text
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Tootlip</h4>
+                                        <p class="card__type">Atom</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/avatar.html" class="card">
+                                    <div class="card__body">
+                                        <div class="avatar avatar_preview">
+                                            <img src="06-lection4/01-avatar/public/avatar-200.jpg" alt="Avatar" class="avatar__img">
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Avatar</h4>
+                                        <p class="card__type">Atom</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                        <a href="#" class="mainly__card-link">
-                            <div class="card">
-                                <div class="card__component-container"></div>
-                                <h5 class="card__title">Calendar</h5>
+                            <div class="element-preview">
+                                <h3 class="element-preview__heading">Buttons</h3>
+                                <div class="grid-4-columns">
+                                    <button class="btn">Button</button>
+                                    <button class="btn" disabled>Button disabled</button>
+                                    <button class="btn btn_primary">Primary</button>
+                                    <button class="btn btn_primary" disabled>Primary</button>
+                                    <button class="btn btn_secondary">Secondary</button>
+                                    <button class="btn btn_secondary" disabled>Secondary</button>
+                                    <button class="btn btn_alternate">Alternate</button>
+                                    <button class="btn btn_alternate" disabled>Alternate</button>
+                                </div>
                             </div>
-                        </a>
-                        <a href="#" class="mainly__card-link">
-                            <div class="card">
-                                <div class="card__component-container"></div>
-                                <h5 class="card__title">Modal dialog</h5>
+                            <div class="element-preview">
+                                <h3 class="element-preview__heading">Custom form elements</h3>
+                                <div class="grid-3-columns">
+                                    <label class="radio">
+                                        <input type="radio" name="radio" class="radio__input">
+                                        <div class="radio__state">
+                                            <div class="radio__control">
+                                                <div class="radio__circle"></div>
+                                            </div>
+                                            <div class="radio__title">Male</div>
+                                        </div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="radio" class="radio__input">
+                                        <div class="radio__state">
+                                            <div class="radio__control">
+                                                <div class="radio__circle"></div>
+                                            </div>
+                                            <div class="radio__title">Female</div>
+                                        </div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="radio" class="radio__input" disabled>
+                                        <div class="radio__state">
+                                            <div class="radio__control">
+                                                <div class="radio__circle"></div>
+                                            </div>
+                                            <div class="radio__title">Special</div>
+                                        </div>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" name="checkbox">
+                                        <div class="checkbox__state">
+                                            <div class="checkbox__control">
+                                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="checkbox__title">Default</div>
+                                        </div>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" name="checkbox" checked>
+                                        <div class="checkbox__state">
+                                            <div class="checkbox__control">
+                                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="checkbox__title">Checked</div>
+                                        </div>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" name="checkbox" disabled>
+                                        <div class="checkbox__state">
+                                            <div class="checkbox__control">
+                                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="checkbox__title">Disabled</div>
+                                        </div>
+                                    </label>
+                                    <label class="toggler">
+                                        <input type="checkbox" class="toggler__input" name="toggler">
+                                        <div class="toggler__state">
+                                            <div class="toggler__control">
+                                                <div class="toggler__circle"></div>
+                                            </div>
+                                            <div class="toggler__title">Off</div>
+                                        </div>
+                                    </label>
+                                    <label class="toggler">
+                                        <input type="checkbox" class="toggler__input" name="toggler" checked>
+                                        <div class="toggler__state">
+                                            <div class="toggler__control">
+                                                <div class="toggler__circle"></div>
+                                            </div>
+                                            <div class="toggler__title">On</div>
+                                        </div>
+                                    </label>
+                                    <label class="toggler">
+                                        <input type="checkbox" class="toggler__input" name="toggler" disabled>
+                                        <div class="toggler__state">
+                                            <div class="toggler__control">
+                                                <div class="toggler__circle"></div>
+                                            </div>
+                                            <div class="toggler__title">Disabled</div>
+                                        </div>
+                                    </label>
+                                </div>
                             </div>
-                        </a>
-                        <a href="#" class="mainly__card-link">
-                            <div class="card">
-                                <div class="card__component-container">
-                                    <div class="histogram histogram_preview">
-                                        <header class="histogram__header">
-                                            <h5 class="histogram__total-orders">Total orders</h5>
-                                            <div class="histogram__link">View all</div>
-                                        </header>
-                                        <div class="histogram__orders-count">50254</div>
-                                        <div class="histogram__bars">
-                                            <div class="histogram__bar" style="height: 100%"></div>
-                                            <div class="histogram__bar" style="height: 70%"></div>
-                                            <div class="histogram__bar" style="height: 44%"></div>
-                                            <div class="histogram__bar" style="height: 78%"></div>
-                                            <div class="histogram__bar" style="height: 44%"></div>
-                                            <div class="histogram__bar" style="height: 60%"></div>
-                                            <div class="histogram__bar" style="height: 78%"></div>
-                                            <div class="histogram__bar" style="height: 100%"></div>
-                                            <div class="histogram__bar" style="height: 22%"></div>
-                                            <div class="histogram__bar" style="height: 44%"></div>
-                                            <div class="histogram__bar" style="height: 60%"></div>
-                                            <div class="histogram__bar" style="height: 70%"></div>
-                                            <div class="histogram__bar" style="height: 22%"></div>
-                                            <div class="histogram__bar" style="height: 100%"></div>
-                                            <div class="histogram__bar" style="height: 22%"></div>
-                                            <div class="histogram__bar" style="height: 78%"></div>
-                                            <div class="histogram__bar" style="height: 60%"></div>
-                                            <div class="histogram__bar" style="height: 44%"></div>
-                                            <div class="histogram__bar" style="height: 70%"></div>
-                                            <div class="histogram__bar" style="height: 60%"></div>
-                                            <div class="histogram__bar" style="height: 22%"></div>
-                                            <div class="histogram__bar" style="height: 78%"></div>
-                                            <div class="histogram__bar" style="height: 70%"></div>
-                                            <div class="histogram__bar" style="height: 90%"></div>
-                                            <div class="histogram__bar" style="height: 60%"></div>
-                                            <div class="histogram__bar" style="height: 22%"></div>
-                                            <div class="histogram__bar" style="height: 60%"></div>
-                                            <div class="histogram__bar" style="height: 22%"></div>
-                                            <div class="histogram__bar" style="height: 70%"></div>
-                                            <div class="histogram__bar" style="height: 34%"></div>
+                        </div>
+                        <div class="tabs__tab-content tabs__tab-content-molecules-tab">
+                            <div class="tabs__cards">
+                                <a href="./pages/formgroup.html" class="card">
+                                    <div class="card__body">
+                                        <div class="custom-form-elements-container">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" name="checkbox">
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="checkbox__title">Default</div>
+                                                </div>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" name="checkbox" checked>
+                                                <div class="checkbox__state">
+                                                    <div class="checkbox__control">
+                                                        <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="checkbox__title">Checked</div>
+                                                </div>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="radio" class="radio__input">
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <div class="radio__circle"></div>
+                                                    </div>
+                                                    <div class="radio__title">Default</div>
+                                                </div>
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="radio" class="radio__input" checked>
+                                                <div class="radio__state">
+                                                    <div class="radio__control">
+                                                        <div class="radio__circle"></div>
+                                                    </div>
+                                                    <div class="radio__title">Selected</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Custom form elements</h4>
+                                        <p class="card__type">Molecules</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/calendar.html" class="card">
+                                    <div class="card__body">
+                                        <div class="calendar calendar_preview">
+                                            <div class="calendar__title">October 2019</div>
+                                            <div class="calendar__wrapper">
+                                                <div class="calendar__inner">
+                                                    <span class="calendar__item calendar__item_day">Mon</span>
+                                                    <span class="calendar__item calendar__item_day">Tue</span>
+                                                    <span class="calendar__item calendar__item_day">Wed</span>
+                                                    <span class="calendar__item calendar__item_day">Thu</span>
+                                                    <span class="calendar__item calendar__item_day">Fri</span>
+                                                    <span class="calendar__item calendar__item_day">Sat</span>
+                                                    <span class="calendar__item calendar__item_day">Sun</span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item">1</span>
+                                                    <span class="calendar__item">2</span>
+                                                    <span class="calendar__item">3</span>
+                                                    <span class="calendar__item">4</span>
+                                                    <span class="calendar__item">5</span>
+                                                    <span class="calendar__item">6</span>
+                                                    <span class="calendar__item">7</span>
+                                                    <span class="calendar__item">8</span>
+                                                    <span class="calendar__item">9</span>
+                                                    <span class="calendar__item">10</span>
+                                                    <span class="calendar__item">11</span>
+                                                    <span class="calendar__item">12</span>
+                                                    <span class="calendar__item">13</span>
+                                                    <span class="calendar__item">14</span>
+                                                    <span class="calendar__item">15</span>
+                                                    <span class="calendar__item">16</span>
+                                                    <span class="calendar__item">17</span>
+                                                    <span class="calendar__item calendar__item_range-start">18</span>
+                                                    <span class="calendar__item calendar__item_range-mid">19</span>
+                                                    <span class="calendar__item calendar__item_range-mid">20</span>
+                                                    <span class="calendar__item calendar__item_range-mid">21</span>
+                                                    <span class="calendar__item calendar__item_range-mid">22</span>
+                                                    <span class="calendar__item calendar__item_range-end">23</span>
+                                                    <span class="calendar__item">24</span>
+                                                    <span class="calendar__item">25</span>
+                                                    <span class="calendar__item">26</span>
+                                                    <span class="calendar__item">27</span>
+                                                    <span class="calendar__item">28</span>
+                                                    <span class="calendar__item">29</span>
+                                                    <span class="calendar__item">30</span>
+                                                    <span class="calendar__item">31</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Calendar</h4>
+                                        <p class="card__type">Molecule</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="element-preview element-preview_half-width">
+                                <h3 class="element-preview__heading">Skeleton</h3>
+                                <div class="skeleton">
+                                    <div class="skeleton__container-row">
+                                        <div class="skeleton__avatar"></div>
+                                        <div class="skeleton__container-columns">
+                                            <div class="skeleton__strip skeleton__strip_small"></div>
+                                            <div class="skeleton__strip skeleton__strip_medium"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skeleton__strip"></div>
+                                    <div class="skeleton__strip"></div>
+                                </div>
+                            </div>
+                            <div class="element-preview">
+                                <h3 class="element-preview__heading">Custom form elements</h3>
+                                <div class="element-preview__container">
+                                    <div class="form-group">
+                                        <label class="form-group__title" for="input-1">Label</label>
+                                        <div class="form-group__container">
+                                            <input type="text" name="input" id="input-1" class="form-group__input" placeholder="Placeholder">
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group_success">
+                                        <label class="form-group__title" for="input-2">Success</label>
+                                        <div class="form-group__container">
+                                            <input type="text" name="input" id="input-2" class="form-group__input" value="Success">
+                                            <svg class="form-group__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M22 4L12 14.01L9 11.01" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group_invalid">
+                                        <label class="form-group__title" for="input-3">Error</label>
+                                        <div class="form-group__container">
+                                            <input type="text" name="input" id="input-3" class="form-group__input" value="Error">
+                                            <svg class="form-group__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.29 3.86001L1.82 18C1.64537 18.3024 1.55296 18.6453 1.55199 18.9945C1.55101 19.3437 1.64149 19.6871 1.81442 19.9905C1.98736 20.2939 2.23672 20.5468 2.53771 20.7239C2.83869 20.901 3.1808 20.9962 3.53 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0126 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.447 18.6453 22.3546 18.3024 22.18 18L13.71 3.86001C13.5317 3.56611 13.2807 3.32313 12.9812 3.15449C12.6817 2.98585 12.3437 2.89726 12 2.89726C11.6563 2.89726 11.3183 2.98585 11.0188 3.15449C10.7193 3.32313 10.4683 3.56611 10.29 3.86001V3.86001Z" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 9V13" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 16V16.5" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
                                         </div>
                                     </div>
                                 </div>
-                                <h5 class="card__title">Histogram</h5>
                             </div>
-                        </a>
-                        <a href="#" class="mainly__card-link">
-                            <div class="card">
-                                <div class="card__component-container"></div>
-                                <h5 class="card__title">Avatar</h5>
+                        </div>
+                        <div class="tabs__tab-content tabs__tab-content-organisms-tab">
+                            <div class="tabs__cards">
+                                <a href="./pages/modal.html" class="card">
+                                    <div class="card__body">
+                                        <div class="modal modal_preview">
+                                            <div class="modal__body">
+                                                <button class="modal__btn-close">
+                                                    <img src="05-lection3/02-modal/x.svg" alt="close">
+                                                </button>
+                                                <header class="modal__header">
+                                                    <h5 class="modal__title">Modal title</h5>
+                                                </header>
+                                                <p class="modal__content">
+                                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Modal dialog</h4>
+                                        <p class="card__type">Organism</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/histogram.html" class="card">
+                                    <div class="card__body">
+                                        <div class="histogram histogram_preview">
+                                            <header class="histogram__header">
+                                                <h5 class="histogram__total-orders">Total orders</h5>
+                                            </header>
+                                            <div class="histogram__orders-count">50254</div>
+                                            <div class="histogram__bars">
+                                                <div class="histogram__bar" style="height: 100%"></div>
+                                                <div class="histogram__bar" style="height: 70%"></div>
+                                                <div class="histogram__bar" style="height: 44%"></div>
+                                                <div class="histogram__bar" style="height: 78%"></div>
+                                                <div class="histogram__bar" style="height: 44%"></div>
+                                                <div class="histogram__bar" style="height: 60%"></div>
+                                                <div class="histogram__bar" style="height: 78%"></div>
+                                                <div class="histogram__bar" style="height: 100%"></div>
+                                                <div class="histogram__bar" style="height: 22%"></div>
+                                                <div class="histogram__bar" style="height: 44%"></div>
+                                                <div class="histogram__bar" style="height: 60%"></div>
+                                                <div class="histogram__bar" style="height: 70%"></div>
+                                                <div class="histogram__bar" style="height: 22%"></div>
+                                                <div class="histogram__bar" style="height: 100%"></div>
+                                                <div class="histogram__bar" style="height: 22%"></div>
+                                                <div class="histogram__bar" style="height: 78%"></div>
+                                                <div class="histogram__bar" style="height: 60%"></div>
+                                                <div class="histogram__bar" style="height: 44%"></div>
+                                                <div class="histogram__bar" style="height: 70%"></div>
+                                                <div class="histogram__bar" style="height: 60%"></div>
+                                                <div class="histogram__bar" style="height: 22%"></div>
+                                                <div class="histogram__bar" style="height: 78%"></div>
+                                                <div class="histogram__bar" style="height: 70%"></div>
+                                                <div class="histogram__bar" style="height: 90%"></div>
+                                                <div class="histogram__bar" style="height: 60%"></div>
+                                                <div class="histogram__bar" style="height: 22%"></div>
+                                                <div class="histogram__bar" style="height: 60%"></div>
+                                                <div class="histogram__bar" style="height: 22%"></div>
+                                                <div class="histogram__bar" style="height: 70%"></div>
+                                                <div class="histogram__bar" style="height: 34%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Histogram</h4>
+                                        <p class="card__type">Organism</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
+                            <div class="element-preview">
+                                <h3 class="element-preview__heading">Modal</h3>
+                                <button class="btn btn_primary" id="modal-open">Open modal</button>
+                                <div class="modal" id="modal">
+                                    <div class="modal__body">
+                                        <button id="modal-close" class="modal__btn-close">
+                                            <img src="./05-lection3/02-modal/x.svg" alt="close">
+                                        </button>
+                                        <header class="modal__header">
+                                            <h5 class="modal__title">Modal title</h5>
+                                        </header>
+                                        <p class="modal__content">
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element-preview">
+                                <h3 class="element-preview__heading">Accordion</h3>
+                                <div class="accordion">
+                                    <details class="accordion__item" open>
+                                        <summary class="accordion__summary">
+                                            <h3 class="accordion__heading">Accordion item 1</h3>
+                                            <img src="./03-lection1/02-accordion/accordion__arrow.svg" class="accordion__arrow" alt="" srcset="">
+                                        </summary>
+                                        <p class="accordion__content">
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        </p>
+                                    </details>
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            <h3 class="accordion__heading">Accordion item 2</h3>
+                                            <img src="./03-lection1/02-accordion/accordion__arrow.svg" class="accordion__arrow" alt="" srcset="">
+                                        </summary>
+                                        <p class="accordion__content">
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        </p>
+                                    </details>
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            <h3 class="accordion__heading">Accordion item 3</h3>
+                                            <img src="./03-lection1/02-accordion/accordion__arrow.svg" class="accordion__arrow" alt="" srcset="">
+                                        </summary>
+                                        <p class="accordion__content">
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        </p>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </main>
             <footer class="footer">
@@ -103,5 +754,9 @@
                 </div>
             </footer>
         </div>
+    <script src="./07-lection5/01-checkbox/checkbox.js"></script>
+    <script src="./07-lection5/03-toggler/toggler.js"></script>
+    <script src="./05-lection3/02-modal/index.js"></script>
+    <script src="./09-lection7/01-burger-menu/burger-menu.js"></script>
     </body>
 </html>

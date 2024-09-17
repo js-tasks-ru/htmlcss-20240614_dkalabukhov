@@ -1,5 +1,7 @@
 .footer {
   padding: 71px 0 136px;
+  background-color: var(--footer-home-bg);
+  color: var(--footer-text-color);
 }
 
 .footer__container {
@@ -8,11 +10,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 var(--container-padding);
 }
 
 .footer_inner {
   padding: 92px 0 56px;
-  background-color: var(--main-background);
+  background-color: var(--light-grey);
 }
 
 .footer__heading {

@@ -3,8 +3,18 @@
   display: inline-block;
 }
 
+.tooltip_preview .tooltip__bubble {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip_preview {
+  transform: translateY(28px);
+}
+
 .tooltip__bubble {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   white-space: nowrap;
   background-color: var(--primary);
   font-family: Inter, sans-serif;
@@ -17,6 +27,8 @@
   bottom: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%);
+  transition: opacity 0.25s linear,
+              visibility 0s linear 0.25s;
 }
 
 .tooltip__bubble:before {
@@ -30,5 +42,7 @@
 }
 
 .tooltip__trigger:hover ~ .tooltip__bubble {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
 }

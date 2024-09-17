@@ -1,15 +1,22 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 350px;
-  height: 367px;
-  background: var(--white);
+  background: var(--card-bg);
   border-radius: 12px;
-  padding: 80px 24px 30px 26px;
+  padding: 2rem;
+  color: var(--card-text-color)
 }
 
-.card__component-container {
+.card__body {
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card__footer {
+  text-align: center;
 }
 
 .card__title {
@@ -17,5 +24,28 @@
   font-weight: 500;
   font-size: 21px;
   line-height: 24.61px;
-  text-align: center;
+  overflow: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+}
+
+.card__type {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .card__body {
+    box-shadow: 0px 2px 0 0px #2124290D;
+  }
+
+  .card__title {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

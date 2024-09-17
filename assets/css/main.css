@@ -4,11 +4,32 @@
 @import '../../components/header/header.css';
 @import '../../components/mainly/mainly.css';
 @import '../../components/footer/footer.css';
-@import '../../components/histogram/histogram.css';
 @import '../../components/card/card.css';
 @import '../../components/component/component.css';
 @import '../../components/menu/menu.css';
+@import '../../components/tabs/tabs.css';
+@import '../../components/tabs-divider/tabs-divider.css';
+@import '../../components/custom-form-elements-container/custom-form-elements-container.css';
+@import '../../components/element-preview/element-preview.css';
+@import '../../components/grid-4-columns/grid-4-columns.css';
+@import '../../components/grid-3-columns/grid-3-columns.css';
+@import '../../components/theme-changer/theme-changer.css';
+@import '../../components/open-menu/open-menu.css';
+@import '../../components/dark-mode/dark-mode.css';
+@import '../../components/container-margin-bottom/container-margin-bottom.css';
+@import '../../09-lection7/01-burger-menu/burger-menu.css';
+@import '../../04-lection2/02-skeleton/skeleton.css';
 @import '../../03-lection1/01-button/button.css';
+@import '../../04-lection2/01-histogram/histogram.css';
+@import '../../05-lection3/01-tooltip/tooltip.css';
+@import '../../07-lection5/01-checkbox/checkbox.css';
+@import '../../07-lection5/02-radio/radio.css';
+@import '../../07-lection5/03-toggler/toggler.css';
+@import '../../07-lection5/04-input/input.css';
+@import '../../05-lection3/03-calendar/calendar.css';
+@import '../../05-lection3/02-modal/modal.css';
+@import '../../06-lection4/01-avatar/avatar.css';
+@import '../../03-lection1/02-accordion/accordion.css';
 
 :root {
     --white: #ffffff;
@@ -21,6 +42,7 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --light-grey: #F9FAFC;
 
     --error: var(--red);
     --success: var(--blue);
@@ -31,18 +53,39 @@
     --secondary: var(--purple);
 
     --container-width: 1110px;
-    --main-background: #F9FAFC;
+    --container-padding: 0;
 
-    --modal-background: #C4C4C4;
     --modal-title-color: #334D6E;
 
     --calendar-primary: #334D6E;
     --calendar-week-days: #90A0B7;
     --calendar-item-range-mid: rgba(160, 177, 245, 0.2);
 
-    --menu-heading: #000;
+    /* Ligt&Dark themes */
+    --header-home-bg: var(--white);
+    --header-logo-item-bg: var(--black);
+    --header-heading-color: var(--black);
+    --tabs-nav-bg: var(--white);
+    --main-home-bg: var(--light-grey);
+    --card-bg: var(--white);
+    --card-text-color: var(--black);
+    --footer-home-bg: var(--white);
+    --footer-text-color: var(--black);
+    --dark-bg: var(--black);
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 1280px) {
+    :root {
+        --container-padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --container-padding: 16px;
+    }
 }

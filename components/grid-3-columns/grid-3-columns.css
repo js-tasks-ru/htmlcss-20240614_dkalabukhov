@@ -1,0 +1,19 @@
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 2rem;
+  grid-auto-flow: column;
+}
+
+.grid-3-columns_mb {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+    gap: 1rem;
+  }
+}

@@ -6,6 +6,10 @@
   border-radius: 8px;
 }
 
+.histogram_preview {
+  width: 100%;
+}
+
 .histogram__header {
   display: flex;
   justify-content: space-between;

@@ -1,12 +1,12 @@
 .mainly {
-  background-color: var(--main-background);
+  background-color: var(--main-home-bg);
   flex-grow: 1;
 }
 
 .mainly__container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 68px 0 204px;
+  padding: 68px var(--container-padding) 204px;
 }
 
 .mainly_inner .mainly__container {
@@ -14,12 +14,17 @@
   grid-template-columns: 229px 1fr;
   grid-template-rows: 1fr;
   grid-gap: 0 56px;
-  padding: 36px 0 0;
+  padding: 36px var(--container-padding) 0;
   height: 100%;
 }
 
-.mainly__cards {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 30px;
+@media (max-width: 768px) {
+  .mainly__container {
+    padding: 24px var(--container-padding) 102px;
+  }
+
+  .mainly_inner .mainly__container {
+    display: flex;
+    flex-direction: column;
+  }
 }

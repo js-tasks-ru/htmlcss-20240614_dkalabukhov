@@ -6,6 +6,20 @@
   border-radius: 12px;
 }
 
+.calendar_preview {
+  max-width: 204px;
+  padding: 1rem;
+}
+
+.calendar_preview .calendar__title {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.calendar_preview .calendar__item {
+  font-size: 9px;
+}
+
 .calendar__title {
   color: var(--calendar-primary);
   font-family: Inter, sans-serif;

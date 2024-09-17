@@ -3,12 +3,31 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  background-color: var(--modal-background);
+  background-color: rgba(196, 196, 196, 0.8);
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 0.8;
+  z-index: 1;
+}
+
+.modal_preview {
+  display: block;
+  position: static;
+  border: 1px solid var(--grey-2);
+  border-radius: 8px;
+}
+
+.modal_preview .modal__body {
+  padding: 1rem;
+}
+
+.modal_preview .modal__title {
+  font-size: 14px;
+}
+
+.modal_preview .modal__content {
+  font-size: 9px;
 }
 
 .modal__body {

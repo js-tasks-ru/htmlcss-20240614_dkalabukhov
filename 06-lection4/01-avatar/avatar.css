@@ -1,6 +1,11 @@
 .avatar {
   width: 102px;
-  height: 102px;
+  height: auto;
+}
+
+.avatar_preview {
+  width: 200px;
+  height: auto;
 }
 
 .avatar__img {
