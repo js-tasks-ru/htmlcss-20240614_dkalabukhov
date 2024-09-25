@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.form-group_component {
+  margin-bottom: 1rem;
+}
+
 .form-group__title {
   font-weight: 500;
   font-size: 12px;
@@ -26,7 +30,7 @@
   padding: 17px 52px 13px 24px;
   font-size: 20px;
   line-height: 26px;
-  color: var(--grey-4);
+  color: var(--text-secondary);
   position: relative;
   transition: all 0.25s ease-in;
 }
@@ -43,11 +47,6 @@
   color: var(--grey-2);
 }
 
-.form-group__input:focus {
-  border-color: var(--blue);
-  box-shadow: 0px 1px 1px 0px #339AF01A;
-}
-
 .form-group_success .form-group__icon,
 .form-group_invalid .form-group__icon {
   display: block;
@@ -57,6 +56,13 @@
   border-color: var(--red);
   box-shadow: 0px 1px 1px 0px #F03D3E1A;
 }
+
+.form-group__input:focus {
+  border-color: var(--blue);
+  box-shadow: 0px 1px 1px 0px #339AF01A;
+  outline: none;
+}
+
 
 
 

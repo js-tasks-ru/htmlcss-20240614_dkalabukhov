@@ -24,9 +24,9 @@
                           <button id="burger-menu-close" class="burger-menu__btn-close">Close menu</button>
                           <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <g clip-path="url(#clip0_18829_459)">
-                              <rect y="1" width="30" height="30" fill="#212429"/>
-                              <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
-                              <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                              <rect class="burger-menu__logo" y="1" width="30" height="30" fill="#212429"/>
+                              <rect class="burger-menu__logo" x="38" width="32" height="32" rx="16" fill="#212429"/>
+                              <path class="burger-menu__logo" d="M78 0L110 32H78V0Z" fill="#212429"/>
                               </g>
                               <defs>
                               <clipPath id="clip0_18829_459">
@@ -39,7 +39,7 @@
                           <div class="dark-mode">
                             <p class="dark-mode__title">Dark mode</p>
                             <label class="toggler toggler_darkmode">
-                              <input type="checkbox" class="toggler__input" name="toggler">
+                              <input type="checkbox" class="toggler__input" name="toggler" id="dark-mode">
                               <div class="toggler__state">
                                   <div class="toggler__control">
                                       <div class="toggler__circle"></div>
@@ -94,7 +94,7 @@
                       </clipPath>
                       </defs>
                     </svg>
-                    <input type="checkbox" class="toggler__input" name="toggler">
+                    <input type="checkbox" class="toggler__input" name="toggler" id="theme-changer">
                     <div class="toggler__state">
                         <div class="toggler__control">
                             <div class="toggler__circle"></div>
@@ -214,13 +214,13 @@
                 </label>
               </div>
               <div class="container-margin-bottom">
-                <div class="form-group">
+                <div class="form-group form-group_component">
                   <label class="form-group__title" for="input-1">Label</label>
                   <div class="form-group__container">
                       <input type="text" name="input" id="input-1" class="form-group__input" placeholder="Placeholder">
                   </div>
                 </div>
-                <div class="form-group form-group_success">
+                <div class="form-group form-group_success form-group_component">
                   <label class="form-group__title" for="input-2">Success</label>
                   <div class="form-group__container">
                       <input type="text" name="input" id="input-2" class="form-group__input" value="Success">
@@ -230,7 +230,7 @@
                       </svg>
                   </div>
                 </div>
-                <div class="form-group form-group_invalid">
+                <div class="form-group form-group_invalid form-group_component">
                   <label class="form-group__title" for="input-3">Error</label>
                   <div class="form-group__container">
                       <input type="text" name="input" id="input-3" class="form-group__input" value="Error">
@@ -254,5 +254,6 @@
   <script src="../07-lection5/01-checkbox/checkbox.js"></script>
   <script src="../07-lection5/03-toggler/toggler.js"></script>
   <script src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+  <script src="../src/theme-changer.js"></script>
 </body>
 </html>

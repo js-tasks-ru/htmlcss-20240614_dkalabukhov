@@ -2,7 +2,7 @@
   font-family: 'Inter';
   font-size: 20px;
   line-height: 26px;
-  color: #000000;
+  color: var(--font-color);
   margin-bottom: 16px;
 }
 
@@ -10,7 +10,7 @@
   font-family: Inter, sans-serif;
   font-size: 14px;
   line-height: 22px;
-  color: #212429;
+  color: var(--font-color);
 }
 
 .menu__item + .menu__item {

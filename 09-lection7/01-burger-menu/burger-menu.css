@@ -22,7 +22,7 @@
 
 .burger-menu__body {
   width: 375px;
-  background-color: #fff;
+  background-color: var(--burger-menu-body);
   padding: 16px;
 }
 
@@ -32,6 +32,10 @@
   justify-items: center;
   align-items: center;
   padding-bottom: 32px;
+}
+
+.burger-menu__logo {
+  fill: var(--burger-menu-logo);
 }
 
 .burger-menu__btn-close {
@@ -77,7 +81,7 @@
 .burger-menu__link {
   font-size: 16px;
   line-height: 24px;
-  color: var(--black);
+  color: var(--font-color);
 }
 
 .burger-menu__link:hover {

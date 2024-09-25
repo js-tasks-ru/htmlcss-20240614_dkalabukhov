@@ -7,6 +7,10 @@
   cursor: pointer;
 }
 
+.open-menu__icon {
+  fill: var(--open-menu-icon);
+}
+
 @media (max-width: 768px) {
   .open-menu {
     display: block;

@@ -24,9 +24,9 @@
                           <button id="burger-menu-close" class="burger-menu__btn-close">Close menu</button>
                           <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <g clip-path="url(#clip0_18829_459)">
-                              <rect y="1" width="30" height="30" fill="#212429"/>
-                              <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
-                              <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                              <rect class="burger-menu__logo" y="1" width="30" height="30" fill="#212429"/>
+                              <rect class="burger-menu__logo" x="38" width="32" height="32" rx="16" fill="#212429"/>
+                              <path class="burger-menu__logo" d="M78 0L110 32H78V0Z" fill="#212429"/>
                               </g>
                               <defs>
                               <clipPath id="clip0_18829_459">
@@ -39,7 +39,7 @@
                           <div class="dark-mode">
                             <p class="dark-mode__title">Dark mode</p>
                             <label class="toggler toggler_darkmode">
-                              <input type="checkbox" class="toggler__input" name="toggler">
+                              <input type="checkbox" class="toggler__input" name="toggler" id="dark-mode">
                               <div class="toggler__state">
                                   <div class="toggler__control">
                                       <div class="toggler__circle"></div>
@@ -94,7 +94,7 @@
                       </clipPath>
                       </defs>
                     </svg>
-                    <input type="checkbox" class="toggler__input" name="toggler">
+                    <input type="checkbox" class="toggler__input" name="toggler" id="theme-changer">
                     <div class="toggler__state">
                         <div class="toggler__control">
                             <div class="toggler__circle"></div>
@@ -157,7 +157,7 @@
                   <section class="tabs__code-content">
                     <div class="tabs__tab-content tabs__tab-content-html">
                       <pre class="tabs__pre">
-                        <code class="tabs__code">
+                        <code class="tabs__code language-markup">
 &lt;button class=&quot;btn btn_primary&quot; id=&quot;modal-open&quot;&gt;Open modal&lt;/button&gt;
 &lt;div class=&quot;modal&quot; id=&quot;modal&quot;&gt;
   &lt;div class=&quot;modal__body&quot;&gt;
@@ -189,7 +189,7 @@
                     </div>
                     <div class="tabs__tab-content tabs__tab-content-css">
                       <pre class="tabs__pre">
-                        <code class="tabs__code">
+                        <code class="tabs__code language-css">
 .modal {
   display: none;
   justify-content: center;
@@ -244,7 +244,7 @@
                     </div>
                     <div class="tabs__tab-content tabs__tab-content-js">
                       <pre class="tabs__pre">
-                        <code class="tabs__code">
+                        <code class="tabs__code language-js">
 (function() {
   const close = document.getElementById('modal-close');
   const modal = document.getElementById('modal');
@@ -280,5 +280,8 @@
   </div>
   <script src="../05-lection3/02-modal/index.js"></script>
   <script src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+  <script src="../src/theme-changer.js"></script>
+  <script src="../node_modules/prismjs/components/prism-core.min.js"></script>
+  <script src="../node_modules/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>

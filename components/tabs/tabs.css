@@ -62,11 +62,24 @@
 
 .tabs__pre {
   overflow-x: auto;
+  background-color: transparent !important;
 }
 
 .tabs__code {
   font-family: monospace, monospace;
   font-size: 1rem;
+  color: var(--font-color) !important;
+  text-shadow: none !important;
+}
+
+/* Prism */
+
+.operator {
+  background-color: transparent !important;
+}
+
+.string {
+  background-color: transparent !important;
 }
 
 #all-tab:checked ~ .tabs__nav label[for="all-tab"]:after,

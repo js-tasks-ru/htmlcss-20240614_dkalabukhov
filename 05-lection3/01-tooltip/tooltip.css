@@ -12,6 +12,10 @@
   transform: translateY(28px);
 }
 
+.tooltip__icon-path {
+  fill: var(--primary);
+}
+
 .tooltip__bubble {
   opacity: 0;
   visibility: hidden;
