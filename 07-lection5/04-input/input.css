@@ -4,10 +4,6 @@
   flex-direction: column;
 }
 
-.form-group_component {
-  margin-bottom: 1rem;
-}
-
 .form-group__title {
   font-weight: 500;
   font-size: 12px;

@@ -35,7 +35,8 @@
 }
 
 .burger-menu__logo {
-  fill: var(--burger-menu-logo);
+  fill: currentColor;
+  color: var(--burger-menu-logo);
 }
 
 .burger-menu__btn-close {

@@ -72,16 +72,6 @@
   text-shadow: none !important;
 }
 
-/* Prism */
-
-.operator {
-  background-color: transparent !important;
-}
-
-.string {
-  background-color: transparent !important;
-}
-
 #all-tab:checked ~ .tabs__nav label[for="all-tab"]:after,
 #atoms-tab:checked ~ .tabs__nav label[for="atoms-tab"]:after,
 #molecules-tab:checked ~ .tabs__nav label[for="molecules-tab"]:after,

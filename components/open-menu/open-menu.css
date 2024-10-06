@@ -8,7 +8,8 @@
 }
 
 .open-menu__icon {
-  fill: var(--open-menu-icon);
+  fill: currentColor;
+  color: var(--open-menu-icon);
 }
 
 @media (max-width: 768px) {

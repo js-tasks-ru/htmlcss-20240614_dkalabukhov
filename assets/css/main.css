@@ -1,5 +1,6 @@
 @import '../fonts/fonts.css';
-@import '../../node_modules/prismjs/themes/prism.min.css';
+@import '../../prismjs/prism.css';
+@import '../../prismjs/prism-fix.css';
 @import './destyle.css';
 @import '../../components/page/page.css';
 @import '../../components/header/header.css';

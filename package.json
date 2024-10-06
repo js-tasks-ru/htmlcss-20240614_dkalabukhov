@@ -17,7 +17,7 @@
     ]
   },
   "keywords": [],
-  "author": "Sergey Zelenov",
+  "author": "Daniil Kalabukhov",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
@@ -27,7 +27,6 @@
   "dependencies": {
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1",
-    "prismjs": "^1.29.0"
+    "prettier": "^2.2.1"
   }
 }
