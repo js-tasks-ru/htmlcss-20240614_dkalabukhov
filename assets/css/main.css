@@ -18,7 +18,7 @@
 @import '../../components/theme-changer/theme-changer.css';
 @import '../../components/open-menu/open-menu.css';
 @import '../../components/dark-mode/dark-mode.css';
-@import '../../components/container-margin-bottom/container-margin-bottom.css';
+@import '../../components/inputs-container/inputs-container.css';
 @import '../../09-lection7/01-burger-menu/burger-menu.css';
 @import '../../04-lection2/02-skeleton/skeleton.css';
 @import '../../03-lection1/01-button/button.css';
@@ -69,6 +69,7 @@
     --open-menu-icon: var(--black);
 
     /* Ligt&Dark themes */
+    --modal-close-icon: var(--black);
     --font-color: var(--black);
     --text-primary: var(--black);
     --text-secondary: var(--grey-4);
@@ -94,6 +95,7 @@
 }
 
 html[data-theme-dark] {
+    --modal-close-icon: var(--white);
     --font-color: var(--text-grey);
     --text-primary: var(--white);
     --text-secondary: var(--white);

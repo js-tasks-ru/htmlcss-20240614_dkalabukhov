@@ -23,12 +23,10 @@
 
 .header__logo-item {
   color: var(--header-logo-item-bg);
-  fill: currentColor;
 }
 
 .header_inner .header__logo-item {
   color: var(--header-logo-inner-bg);
-  fill: currentColor;
 }
 
 .header__heading {

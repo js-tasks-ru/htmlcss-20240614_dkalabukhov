@@ -13,7 +13,7 @@
 }
 
 .tooltip__icon-path {
-  fill: var(--primary);
+  color: var(--primary);
 }
 
 .tooltip__bubble {

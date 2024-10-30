@@ -35,7 +35,6 @@
 }
 
 .burger-menu__logo {
-  fill: currentColor;
   color: var(--burger-menu-logo);
 }
 

@@ -59,6 +59,12 @@
   outline: none;
 }
 
+@media (max-width: 768px) {
+  .form-group__input {
+    width: 100%;
+  }
+}
+
 
 
 

@@ -8,7 +8,6 @@
 }
 
 .open-menu__icon {
-  fill: currentColor;
   color: var(--open-menu-icon);
 }
 
