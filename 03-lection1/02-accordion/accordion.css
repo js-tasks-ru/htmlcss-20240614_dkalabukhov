@@ -45,7 +45,7 @@
 }
 
 .accrodion__arrow-icon {
-  stroke: var(--text-secondary);
+  color: var(--text-secondary);
 }
 
 .accordion__item[open] .accordion__arrow {
