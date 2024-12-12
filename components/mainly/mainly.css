@@ -6,7 +6,7 @@
 .mainly__container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 68px var(--container-padding) 204px;
+  padding: 4.25rem var(--container-padding);
 }
 
 .mainly_inner .mainly__container {
@@ -20,7 +20,7 @@
 
 @media (max-width: 768px) {
   .mainly__container {
-    padding: 24px var(--container-padding) 102px;
+    padding: 2rem var(--container-padding);
   }
 
   .mainly_inner .mainly__container {

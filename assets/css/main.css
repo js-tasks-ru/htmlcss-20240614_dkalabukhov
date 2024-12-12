@@ -1,4 +1,6 @@
 @import '../fonts/fonts.css';
+@import '../../prismjs/prism.css';
+@import '../../prismjs/prism-fix.css';
 @import './destyle.css';
 @import '../../components/page/page.css';
 @import '../../components/header/header.css';
@@ -16,7 +18,7 @@
 @import '../../components/theme-changer/theme-changer.css';
 @import '../../components/open-menu/open-menu.css';
 @import '../../components/dark-mode/dark-mode.css';
-@import '../../components/container-margin-bottom/container-margin-bottom.css';
+@import '../../components/inputs-container/inputs-container.css';
 @import '../../09-lection7/01-burger-menu/burger-menu.css';
 @import '../../04-lection2/02-skeleton/skeleton.css';
 @import '../../03-lection1/01-button/button.css';
@@ -43,6 +45,7 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --light-grey: #F9FAFC;
+    --text-grey: #ffffff75;
 
     --error: var(--red);
     --success: var(--blue);
@@ -56,12 +59,21 @@
     --container-padding: 0;
 
     --modal-title-color: #334D6E;
+    --modal-bg: rgba(196, 196, 196, 0.8);
+    --modal-body: var(--white);
 
     --calendar-primary: #334D6E;
     --calendar-week-days: #90A0B7;
     --calendar-item-range-mid: rgba(160, 177, 245, 0.2);
 
+    --open-menu-icon: var(--black);
+
     /* Ligt&Dark themes */
+    --modal-close-icon: var(--black);
+    --font-color: var(--black);
+    --text-primary: var(--black);
+    --text-secondary: var(--grey-4);
+    --text-tertiary: var(--grey-3);
     --header-home-bg: var(--white);
     --header-logo-item-bg: var(--black);
     --header-heading-color: var(--black);
@@ -72,6 +84,44 @@
     --footer-home-bg: var(--white);
     --footer-text-color: var(--black);
     --dark-bg: var(--black);
+    --burger-menu-body: var(--white);
+    --burger-menu-logo: var(--black);
+
+    --header-inner-bg: var(--light-grey);
+    --footer-inner-bg: var(--light-grey);
+    --component-bg: var(--white);
+    --component-heading: var(--black);
+    --header-logo-inner-bg: var(--black);
+}
+
+html[data-theme-dark] {
+    --modal-close-icon: var(--white);
+    --font-color: var(--text-grey);
+    --text-primary: var(--white);
+    --text-secondary: var(--white);
+    --text-tertiary: var(--white);
+    --header-home-bg: var(--black);
+    --header-logo-item-bg: var(--grey-1);
+    --header-heading-color: var(--text-grey);
+    --tabs-nav-bg: var(--black);
+    --main-home-bg: var(--grey-4);
+    --card-bg: var(--black);
+    --card-text-color: var(--text-grey);
+    --footer-home-bg: var(--black);
+    --footer-text-color: var(--text-grey);
+    --dark-bg: var(--grey-1);
+    --calendar-item-range-mid: hsl(228, 81%, calc(59% + 10%));
+    --calendar-primary: var(--text-grey);
+    --modal-body: var(--black);
+    --modal-title-color: var(--white);
+    --open-menu-icon: var(--grey-4);
+    --burger-menu-body: var(--black);
+    --burger-menu-logo: var(--white);
+
+    --header-inner-bg: var(--grey-4);
+    --footer-inner-bg: var(--grey-4);
+    --component-bg: var(--black);
+    --component-heading: var(--text-grey);
 }
 
 body {

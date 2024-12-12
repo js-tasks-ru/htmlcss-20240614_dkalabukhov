@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  background-color: rgba(196, 196, 196, 0.8);
+  background-color: var(--modal-bg);
   top: 0;
   right: 0;
   bottom: 0;
@@ -31,7 +31,7 @@
 }
 
 .modal__body {
-  background-color: var(--white);
+  background-color: var(--modal-body);
   padding: 30px 40px 33px;
   max-width: 428px;
   border-radius: 8px;
@@ -43,7 +43,7 @@
 }
 
 .modal__title {
-  color: #334D6E;
+  color: var(--modal-title-color);
   font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -60,9 +60,13 @@
   cursor: pointer;
 }
 
+.modal__close-icon {
+  color: var(--modal-close-icon);
+}
+
 .modal__content {
   font-family: Inter, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-4);
+  color: var(--text-secondary);
 }

@@ -5,7 +5,7 @@
 
 .header_inner {
   padding: 25px 0;
-  background-color: var(--light-grey);
+  background-color: var(--header-inner-bg);
 }
 
 .header__container {
@@ -23,7 +23,10 @@
 
 .header__logo-item {
   color: var(--header-logo-item-bg);
-  fill: currentColor;
+}
+
+.header_inner .header__logo-item {
+  color: var(--header-logo-inner-bg);
 }
 
 .header__heading {
@@ -31,13 +34,13 @@
   font-size: 50px;
   font-weight: 500;
   line-height: 64px;
-  margin-top: 41px;
+  padding-top: 41px;
   color: var(--header-heading-color);
 }
 
 @media (max-width: 768px) {
   .header {
-    padding-bottom: 60px;
+    padding-bottom: 32px;
   }
 
   .header_inner {
@@ -52,7 +55,5 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 38px;
-    color: var(--grey-4);
-    margin-top: 48px;
   }
 }
